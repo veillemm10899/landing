@@ -1,0 +1,66 @@
+/* ==========================================================================
+   VEILLEMM — DESIGN TOKENS
+   Concept: The Frequency Atelier · Cinematic + Typography First
+   Palette discipline: ink, bone, one signal-amber accent. Nothing else shouts.
+   ========================================================================== */
+
+:root {
+  color-scheme: dark;
+
+  /* ---- Color system ---- */
+  --bg:        #0a0a0c;                 /* primary ink            */
+  --bg-2:      #101014;                 /* raised panel           */
+  --bg-3:      #17171d;                 /* hover / terminal       */
+  --line:      rgba(239, 234, 225, 0.12);  /* hairline rule       */
+  --line-2:    rgba(239, 234, 225, 0.26);  /* stronger rule       */
+
+  --text:      #efeae1;                 /* bone — primary text    */
+  --text-2:    #a7a19a;                 /* muted body             */
+  --text-3:    #6d6862;                 /* faint labels           */
+
+  --signal:    #ffb000;                 /* accent — the signal    */
+  --signal-ink:#1a1200;                 /* ink-on-signal          */
+  --signal-soft: rgba(255, 176, 0, 0.13); /* wash / glow           */
+
+  --relay:     #9fb4ad;                 /* mono technical accents */
+  --ok:        #3ecfa0;                 /* positive status        */
+  --danger:    #ff5d4d;                 /* only for terminal dots */
+
+  /* ---- Typography ---- */
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-serif:   'Fraunces', Georgia, serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, monospace;
+
+  --fs-hero:    clamp(3.4rem, 11vw, 9.5rem);
+  --fs-statement: clamp(2.4rem, 6vw, 5rem);
+  --fs-head:    clamp(2rem, 4.6vw, 3.6rem);
+  --fs-title:   clamp(1.5rem, 2.6vw, 2.2rem);
+  --fs-body:    1.0625rem;              /* 17px */
+  --fs-small:   0.9375rem;              /* 15px */
+  --fs-mono:    0.75rem;                /* 12px */
+
+  --track-wide: 0.34em;
+  --track-mid:  0.16em;
+
+  /* ---- Spacing ---- */
+  --pad-x:     clamp(1.25rem, 4vw, 3rem);       /* page gutter            */
+  --section-pad: clamp(6rem, 15vh, 11rem);      /* vertical rhythm        */
+  --nav-h:     4.5rem;
+
+  /* ---- Motion ---- */
+  --ease-out:    cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-io:     cubic-bezier(0.65, 0.05, 0.36, 1);
+  --dur:         0.65s;
+  --dur-slow:    0.95s;
+
+  /* ---- Misc ---- */
+  --radius: 4px;
+  --container: 1480px;
+
+  /* ---- Z index ---- */
+  --z-grain: 300;
+  --z-header: 400;
+  --z-menu: 500;
+  --z-preloader: 600;
+  --z-cursor: 700;
+}

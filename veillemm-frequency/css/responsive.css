@@ -1,0 +1,69 @@
+/* ==========================================================================
+   VEILLEMM — RESPONSIVE
+   Intentional mobile experiences — not a shrunken desktop.
+   ========================================================================== */
+
+/* ---- Tablet & small laptop ---- */
+@media (max-width: 1024px) {
+  .nav-links, .header-clock { display: none; }
+  .hamburger { display: flex; }
+
+  .trans-slide {
+    width: min(86vw, 720px);
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  .trans-visual { aspect-ratio: 16 / 10; }
+  .trans-end { width: min(86vw, 720px); }
+  .trans-progress { display: none; }
+  .trans-scroll.is-pinned { height: auto; }
+  .trans-scroll.is-pinned .trans-viewport { position: static; height: auto; display: block; }
+
+  .process-grid { grid-template-columns: 1fr; }
+  .process-side { padding-left: 0; }
+
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* ---- Mobile portrait ---- */
+@media (max-width: 640px) {
+  :root { --pad-x: 1.25rem; }
+
+  .logo-status { display: none; }
+  .logo-word { font-size: 0.95rem; }
+
+  .hero-inner { padding-bottom: 12rem; }
+  .hero-meta { gap: 0.7rem; font-size: 0.64rem; }
+  .hero-meta-sep { display: none; }
+  .scroll-hint { width: 100%; margin-left: 0; }
+
+  .manifesto-body { grid-template-columns: 1fr; }
+  .principles { grid-template-columns: 1fr; gap: 2.2rem; }
+
+  .channel-head { grid-template-columns: 3.4rem 1fr auto; }
+  .channel-desc, .channel-desc + .chip-row { padding-left: 0; }
+  .channel:hover .channel-head { padding-inline: 0.5rem; }
+  .channel:hover .channel-name { transform: none; }
+
+  .trans-head-wrap { padding-top: calc(var(--section-pad) * 0.75); }
+  .trans-track { gap: 2rem; }
+  .trans-slide { width: 88vw; }
+
+  .terminal-body { font-size: 0.72rem; padding: 1.1rem 1rem; min-height: 260px; }
+
+  .footer-grid { grid-template-columns: 1fr; gap: 2.2rem; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; }
+}
+
+/* ---- Short screens (landscape mobile) ---- */
+@media (max-height: 520px) and (orientation: landscape) {
+  .hero-inner { padding-top: 6rem; padding-bottom: 7rem; }
+  .hero-title { font-size: clamp(2.6rem, 12vh, 5rem); }
+  .hero-meta { display: none; }
+}
+
+/* ---- Touch devices: bigger targets, no hover traps ---- */
+@media (pointer: coarse) {
+  .channel-head { padding-block: 1.4rem; }
+  .nav-links a, .btn { min-height: 44px; }
+}

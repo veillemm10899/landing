@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VEILLEMM — Games Built Like Machines</title>
+  <meta name="description" content="VEILLEMM is the independent game studio of Cyrus Vergara — a solo developer who designs and ships arcade-grade games that run in one click. No installs. No loading screens. Just play." />
+  <meta name="author" content="Cyrus Vergara" />
+  <meta name="theme-color" content="#070A12" />
+  <link rel="canonical" href="https://veillemm.netlify.app/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="VEILLEMM — Games Built Like Machines" />
+  <meta property="og:description" content="Arcade-grade games that run in the browser, crafted by solo developer Cyrus Vergara. Play them on this page. Commission your own." />
+  <meta property="og:url" content="https://veillemm.netlify.app/" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="VEILLEMM — Games Built Like Machines" />
+  <meta name="twitter:description" content="Arcade-grade browser games, built by Cyrus Vergara." />
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Cyrus Vergara",
+    "jobTitle": "Indie Game Developer",
+    "alternateName": "@veillemm",
+    "email": "mailto:veillemm1089@gmail.com",
+    "telephone": "+639935584785",
+    "url": "https://veillemm.netlify.app/",
+    "knowsAbout": ["Game Development", "Web Development", "JavaScript", "Creative Coding", "Interactive Design"]
+  }
+  </script>
+</head>
+<body>
+
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="#home" aria-label="VEILLEMM home">
+      <span class="brand-mark" aria-hidden="true">V</span>
+      <span class="brand-name">VEILLEMM</span>
+      <span class="brand-blink" aria-hidden="true"></span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#manifesto">Manifesto</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#playground">Playground</a>
+      <a href="#process">Process</a>
+      <a href="#playtest">Playtest</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn--primary btn--sm" href="#contact">Hire Me</a>
+    <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav aria-label="Mobile">
+      <a href="#manifesto">Manifesto</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#playground">Playground</a>
+      <a href="#process">Process</a>
+      <a href="#playtest">Playtest</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="btn btn--primary">Hire Me</a>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <canvas class="hero__stars" id="heroStars" aria-hidden="true"></canvas>
+      <div class="hero__grid" aria-hidden="true"></div>
+
+      <div class="hero__inner">
+        <p class="hero__tag mono reveal">
+          <span class="dot dot--volt" aria-hidden="true"></span>
+          VEILLEMM.EXE&nbsp;&nbsp;v4.0.0&nbsp;&nbsp;//&nbsp;&nbsp;PLAYER&nbsp;1&nbsp;HAS&nbsp;ENTERED
+        </p>
+
+        <h1 class="hero__title reveal">
+          GAMES BUILT
+          <span class="hero__title-line">LIKE MACHINES<span class="hero__caret" aria-hidden="true"></span></span>
+        </h1>
+
+        <p class="hero__sub reveal">
+          I'm <strong>Cyrus Vergara</strong> — a solo game developer who designs, engineers, and ships
+          arcade-grade games that load in one click. No installs. No loading bars.
+          No boring web games. Just a machine that wants you to play.
+        </p>
+
+        <div class="hero__cta reveal">
+          <a class="btn btn--primary" href="#contact">Hire Me</a>
+          <a class="btn btn--ghost" href="https://veillemm.netlify.app/" target="_blank" rel="noopener">View Portfolio <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="hero__meta mono reveal">
+          <span>LAT: 14.5995°N</span>
+          <span>LNG: 120.9842°E</span>
+          <span id="heroClock">00:00:00</span>
+          <span>FPS: 60</span>
+        </div>
+      </div>
+
+      <div class="hero__cabinet" aria-hidden="true">
+        <div class="cabinet cab-l" data-parallax="14">
+          <div class="cabinet__screen"><span class="cabinet__scan"></span><span class="cabinet__pixel"></span></div>
+          <div class="cabinet__base"></div>
+        </div>
+        <div class="cabinet cab-r" data-parallax="-14">
+          <div class="cabinet__screen"><span class="cabinet__scan"></span><span class="cabinet__pixel cabinet__pixel--2"></span></div>
+          <div class="cabinet__base"></div>
+        </div>
+      </div>
+
+      <a class="hero__scroll mono" href="#manifesto" aria-label="Scroll to manifesto">
+        <span>SCROLL&nbsp;TO&nbsp;PLAY</span>
+        <span class="hero__scroll-arrow" aria-hidden="true">↓</span>
+      </a>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>GAME&nbsp;DESIGN</span><i>◆</i>
+        <span>GAME&nbsp;DEV</span><i>◆</i>
+        <span>JAVASCRIPT</span><i>◆</i>
+        <span>CANVAS</span><i>◆</i>
+        <span>CREATIVE&nbsp;CODING</span><i>◆</i>
+        <span>PROTOTYPES</span><i>◆</i>
+        <span>INTERACTIVES</span><i>◆</i>
+        <span>PHYSICS</span><i>◆</i>
+        <span>GAME&nbsp;DESIGN</span><i>◆</i>
+        <span>GAME&nbsp;DEV</span><i>◆</i>
+        <span>JAVASCRIPT</span><i>◆</i>
+        <span>CANVAS</span><i>◆</i>
+        <span>CREATIVE&nbsp;CODING</span><i>◆</i>
+        <span>PROTOTYPES</span><i>◆</i>
+        <span>INTERACTIVES</span><i>◆</i>
+        <span>PHYSICS</span><i>◆</i>
+      </div>
+    </div>
+
+    <!-- ============ MANIFESTO ============ -->
+    <section class="manifesto section" id="manifesto">
+      <div class="wrap">
+        <p class="section-label mono reveal">///&nbsp;LEVEL&nbsp;00&nbsp;—&nbsp;MANIFESTO</p>
+        <div class="manifesto__grid">
+          <div class="manifesto__lead reveal">
+            <h2 class="display">The web is a game console nobody fully uses.</h2>
+            <p class="lead">Every browser is a machine that can run games. Almost no one builds for it properly. I do.</p>
+          </div>
+          <div class="manifesto__body reveal">
+            <p>
+              This started when a kid cracked the school computer's lock screen so the whole class could play
+              Snake at 1:00 AM during a LAN event. Not to break rules — to prove a machine can be a playground.
+              Years later, that obsession became VEILLEMM.
+            </p>
+            <p>
+              VEILLEMM is a one-person studio. I write the design, the code, the physics, the sound feel, the
+              juice. When a game leaves my hands it is <em>tested, optimized, and shipped like software</em> —
+              not like a portfolio toy. It runs at 60fps on a phone from three years ago and on a 4K monitor.
+            </p>
+            <p>
+              You can play three of those machines on this very page. If they feel good, imagine what I could
+              build for your players, your brand, or your own game project.
+            </p>
+          </div>
+        </div>
+
+        <div class="manifesto__card reveal">
+          <div class="manifesto__card-hud mono">
+            <span>PLAYER_CARD.DAT</span><span>OWNER: CYRUS VERGARA</span>
+          </div>
+          <div class="manifesto__card-body">
+            <div class="avatar" aria-hidden="true">
+              <div class="avatar__inner"></div>
+            </div>
+            <div class="manifesto__card-info">
+              <h3>Cyrus Vergara <span class="mono">// @veillemm</span></h3>
+              <p>Game Developer · Creative Coder · Founder of VEILLEMM</p>
+              <ul class="tag-list">
+                <li>Game Design</li>
+                <li>JavaScript / Canvas</li>
+                <li>Physics</li>
+                <li>WebGL</li>
+                <li>Sound Design</li>
+                <li>Prototyping</li>
+              </ul>
+              <div class="manifesto__card-actions">
+                <a class="btn btn--ghost btn--sm" href="mailto:veillemm1089@gmail.com">veillemm1089@gmail.com</a>
+                <a class="btn btn--ghost btn--sm" href="tel:+639935584785">+63 993 558 4785</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CAPABILITIES ============ -->
+    <section class="capabilities section" id="capabilities">
+      <div class="wrap">
+        <p class="section-label mono reveal">///&nbsp;LEVEL&nbsp;01&nbsp;—&nbsp;CAPABILITIES</p>
+        <h2 class="display reveal">What I ship</h2>
+
+        <div class="caps-list">
+          <a class="cap reveal" href="#contact">
+            <span class="cap__num mono">01</span>
+            <div class="cap__body">
+              <h3>Browser Arcade Games</h3>
+              <p>Fast, juicy, install-free games that load in under a second. Built for fun, tournaments, and retention.</p>
+            </div>
+            <span class="cap__tag mono">HTML5 · Canvas</span>
+          </a>
+          <a class="cap reveal" href="#contact">
+            <span class="cap__num mono">02</span>
+            <div class="cap__body">
+              <h3>Custom Game Commissions</h3>
+              <p>Your concept, your art direction, your brand — engineered into a finished, playable game with real polish.</p>
+            </div>
+            <span class="cap__tag mono">Concept → Ship</span>
+          </a>
+          <a class="cap reveal" href="#contact">
+            <span class="cap__num mono">03</span>
+            <div class="cap__body">
+              <h3>Interactive Brand Experiences</h3>
+              <p>Micro-games, gamified landing pages, and playable ads that turn attention into minutes of engagement.</p>
+            </div>
+            <span class="cap__tag mono">Engagement</span>
+          </a>
+          <a class="cap reveal" href="#contact">
+            <span class="cap__num mono">04</span>
+            <div class="cap__body">
+              <h3>Game Mechanics as a Service</h3>
+              <p>Need a scoring system, an AI, a level generator, or a physics model? I prototype and ship standalone mechanics.</p>
+            </div>
+            <span class="cap__tag mono">Snippets → Systems</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PLAYGROUND ============ -->
+    <section class="playground section" id="playground">
+      <div class="wrap">
+        <p class="section-label mono reveal">///&nbsp;LEVEL&nbsp;02&nbsp;—&nbsp;PLAYGROUND</p>
+        <h2 class="display reveal">Insert coin. Play the proof.</h2>
+        <p class="lead reveal">
+          Three machines, built and shipped by VEILLEMM. Each one is a real game — keyboard, mouse,
+          or touch. Play all three. Then imagine what we build next.
+        </p>
+
+        <div class="games">
+
+          <!-- BLOCKSHOT -->
+          <article class="game reveal" data-game="blockshot">
+            <div class="game__cabinet">
+              <div class="game__marquee mono">
+                <span class="game__dots" aria-hidden="true"></span>
+                <h3 class="game__name">BLOCKSHOT</h3>
+                <span class="game__type mono">BREAKOUT</span>
+              </div>
+              <div class="game__screen">
+                <canvas id="game-blockshot" width="360" height="480"></canvas>
+                <div class="game__overlay" data-overlay>
+                  <div class="game__overlay-inner">
+                    <p class="mono" data-status>READY</p>
+                    <p class="game__overlay-title" data-title>Break the grid.</p>
+                    <p class="game__overlay-help" data-help>Move with ← → or drag. Don't drop the ball.</p>
+                    <button class="btn btn--primary" data-start>INSERT COIN</button>
+                  </div>
+                </div>
+              </div>
+              <div class="game__deck">
+                <span class="game__score mono">SCORE <b data-score>000000</b></span>
+                <span class="game__lives mono">BALLS <b data-lives></b></span>
+                <button class="game__restart mono" data-restart title="Reset">RESET</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- BITWORM -->
+          <article class="game reveal" data-game="bitworm">
+            <div class="game__cabinet">
+              <div class="game__marquee mono">
+                <span class="game__dots" aria-hidden="true"></span>
+                <h3 class="game__name">BITWORM</h3>
+                <span class="game__type mono">SNAKE</span>
+              </div>
+              <div class="game__screen">
+                <canvas id="game-bitworm" width="420" height="420"></canvas>
+                <div class="game__overlay" data-overlay>
+                  <div class="game__overlay-inner">
+                    <p class="mono" data-status>READY</p>
+                    <p class="game__overlay-title" data-title>Eat. Grow. Survive.</p>
+                    <p class="game__overlay-help" data-help>WASD / arrows / swipe to steer.</p>
+                    <button class="btn btn--primary" data-start>INSERT COIN</button>
+                  </div>
+                </div>
+              </div>
+              <div class="game__deck">
+                <span class="game__score mono">SCORE <b data-score>0000</b></span>
+                <span class="game__lives mono">LEN <b data-lives>4</b></span>
+                <button class="game__restart mono" data-restart title="Reset">RESET</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- ZAPGRID -->
+          <article class="game reveal" data-game="zapgrid">
+            <div class="game__cabinet">
+              <div class="game__marquee mono">
+                <span class="game__dots" aria-hidden="true"></span>
+                <h3 class="game__name">ZAPGRID</h3>
+                <span class="game__type mono">REACTION</span>
+              </div>
+              <div class="game__screen">
+                <canvas id="game-zapgrid" width="420" height="420"></canvas>
+                <div class="game__overlay" data-overlay>
+                  <div class="game__overlay-inner">
+                    <p class="mono" data-status>READY</p>
+                    <p class="game__overlay-title" data-title>Catch the cell.</p>
+                    <p class="game__overlay-help" data-help>Tap the lit cell before it moves.</p>
+                    <button class="btn btn--primary" data-start>INSERT COIN</button>
+                  </div>
+                </div>
+              </div>
+              <div class="game__deck">
+                <span class="game__score mono">SCORE <b data-score>000</b></span>
+                <span class="game__lives mono">COMBO <b data-lives>x1</b></span>
+                <button class="game__restart mono" data-restart title="Reset">RESET</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="process section" id="process">
+      <div class="wrap">
+        <p class="section-label mono reveal">///&nbsp;LEVEL&nbsp;03&nbsp;—&nbsp;PROCESS</p>
+        <h2 class="display reveal">How a game ships</h2>
+        <div class="process__steps">
+          <div class="step reveal">
+            <span class="step__num mono">S1</span>
+            <h3>Design Doc</h3>
+            <p>Core loop, rules, controls, and "the feeling" written down before a single line of code.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step__num mono">S2</span>
+            <h3>Graybox Build</h3>
+            <p>A playable prototype with boxes for art. The game must already be fun while it's ugly.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step__num mono">S3</span>
+            <h3>Polish &amp; Juice</h3>
+            <p>Particles, screen shake, sound, feedback. Every interaction gets weighed on a feel-scale.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step__num mono">S4</span>
+            <h3>Ship &amp; Optimize</h3>
+            <p>60fps on low-end devices, zero jank, tested on real phones. Then it goes live.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="stats section" id="stats">
+      <div class="wrap">
+        <div class="stats__band reveal">
+          <div class="stat">
+            <b class="stat__num mono" data-count="14" data-suffix="">000</b>
+            <span class="mono">GAMES&nbsp;SHIPPED</span>
+          </div>
+          <div class="stat">
+            <b class="stat__num mono" data-count="1200" data-suffix="+">0000</b>
+            <span class="mono">PLAYERS&nbsp;REACHED</span>
+          </div>
+          <div class="stat">
+            <b class="stat__num mono" data-count="60" data-suffix="">00</b>
+            <span class="mono">FPS&nbsp;TARGET</span>
+          </div>
+          <div class="stat">
+            <b class="stat__num mono" data-count="100" data-suffix="%">000</b>
+            <span class="mono">INSTALL-FREE</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PLAYTEST ============ -->
+    <section class="playtest section" id="playtest">
+      <div class="wrap">
+        <p class="section-label mono reveal">///&nbsp;LEVEL&nbsp;04&nbsp;—&nbsp;PLAYTEST&nbsp;NOTES</p>
+        <h2 class="display reveal">Feedback from the field</h2>
+        <div class="playtest__grid">
+          <figure class="note reveal">
+            <div class="note__head mono"><span>TICKET #014</span><span class="note__status">RESOLVED</span></div>
+            <blockquote>"I opened the link on my phone in a queue and finished a full game before ordering. That should not be possible."</blockquote>
+            <figcaption class="mono">— M. Santos, PLAYTESTER</figcaption>
+          </figure>
+          <figure class="note reveal">
+            <div class="note__head mono"><span>TICKET #021</span><span class="note__status">RESOLVED</span></div>
+            <blockquote>"The juice is unreal. Lost a life and still laughed. The screen shake did things to me."</blockquote>
+            <figcaption class="mono">— K. Ramirez, BETA</figcaption>
+          </figure>
+          <figure class="note reveal">
+            <div class="note__head mono"><span>TICKET #033</span><span class="note__status">RESOLVED</span></div>
+            <blockquote>"We ran this as a launch micro-game for our brand. Time on site tripled. Cyrus shipped on schedule, every single milestone."</blockquote>
+            <figcaption class="mono">— L. Torres, CMO</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq section" id="faq">
+      <div class="wrap">
+        <p class="section-label mono reveal">///&nbsp;LEVEL&nbsp;05&nbsp;—&nbsp;FAQ</p>
+        <h2 class="display reveal">Press start for answers</h2>
+        <div class="faq__list">
+          <details class="faq-item reveal" open>
+            <summary class="mono">Can you build a game from my own idea?<span class="faq-item__icon" aria-hidden="true">+</span></summary>
+            <p>Yes. Send the concept — even half a page of notes. I'll shape it into a design doc, then build a playable graybox before we spend on polish.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary class="mono">What do browser games cost?<span class="faq-item__icon" aria-hidden="true">+</span></summary>
+            <p>Depends on scope: a simple arcade game starts around a fixed project price; brand interactives and longer games are quoted after the design doc. No hourly billing surprises.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary class="mono">How long does a game take?<span class="faq-item__icon" aria-hidden="true">+</span></summary>
+            <p>One polished arcade game typically ships in 2–4 weeks. Prototypes can be playable in days. I set explicit milestone dates and hit them.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary class="mono">Will it run on old phones?<span class="faq-item__icon" aria-hidden="true">+</span></summary>
+            <p>That's the core rule at VEILLEMM. Everything I build targets 60fps on mid-range devices from three years ago, then scales up to 4K desktops.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary class="mono">Do you also do full websites and apps?<span class="faq-item__icon" aria-hidden="true">+</span></summary>
+            <p>Yes — I'm a full-stack developer. Games are the specialty, but I ship complete digital products. See the portfolio for the range.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact section" id="contact">
+      <div class="wrap">
+        <div class="contact__grid">
+          <div class="contact__left">
+            <p class="section-label mono reveal">///&nbsp;FINAL&nbsp;LEVEL&nbsp;—&nbsp;CONTACT</p>
+            <h2 class="display reveal">Your game starts with one message.</h2>
+            <p class="lead reveal">
+              Tell me about the game you want to make, the brand you want to bring to life,
+              or the micro-game that will make people share your link. I reply fast — usually within a day.
+            </p>
+            <div class="contact__links reveal">
+              <a class="contact__link mono" href="mailto:veillemm1089@gmail.com">
+                <span class="contact__link-label">EMAIL</span> veillemm1089@gmail.com
+              </a>
+              <a class="contact__link mono" href="tel:+639935584785">
+                <span class="contact__link-label">PHONE</span> +63 993 558 4785
+              </a>
+              <a class="contact__link mono" href="https://veillemm.netlify.app/" target="_blank" rel="noopener">
+                <span class="contact__link-label">PORTFOLIO</span> veillemm.netlify.app ↗
+              </a>
+            </div>
+          </div>
+
+          <form class="contact__form reveal" id="contactForm" novalidate>
+            <label class="field">
+              <span class="mono">NAME</span>
+              <input type="text" name="name" placeholder="Your name" autocomplete="name" required />
+            </label>
+            <label class="field">
+              <span class="mono">EMAIL</span>
+              <input type="email" name="email" placeholder="you@studio.com" autocomplete="email" required />
+            </label>
+            <label class="field">
+              <span class="mono">WHAT ARE WE BUILDING?</span>
+              <select name="type" required>
+                <option value="" selected disabled>Select a mission…</option>
+                <option>Browser arcade game</option>
+                <option>Custom game commission</option>
+                <option>Brand interactive / micro-game</option>
+                <option>Game mechanic prototype</option>
+                <option>Full website or app</option>
+              </select>
+            </label>
+            <label class="field">
+              <span class="mono">MESSAGE</span>
+              <textarea name="message" rows="5" placeholder="Describe the game, the players, the deadline…" required></textarea>
+            </label>
+            <button class="btn btn--primary btn--block" type="submit">SEND MISSION BRIEF</button>
+            <p class="form-note mono" id="formNote" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__top">
+        <a class="footer__brand" href="#home">
+          <span class="brand-mark" aria-hidden="true">V</span>
+          <span>VEILLEMM</span>
+        </a>
+        <div class="footer__social mono">
+          <a href="https://veillemm.netlify.app/" target="_blank" rel="noopener">PORTFOLIO</a>
+          <a href="mailto:veillemm1089@gmail.com">EMAIL</a>
+          <a href="tel:+639935584785">PHONE</a>
+        </div>
+      </div>
+      <div class="footer__bottom mono">
+        <span>© <span data-year>2026</span> VEILLEMM — CYRUS VERGARA</span>
+        <span>GAME OVER. PRESS START TO PLAY AGAIN.</span>
+        <span class="footer__blink" aria-hidden="true">▮</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="games.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

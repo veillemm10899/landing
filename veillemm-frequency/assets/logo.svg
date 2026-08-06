@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="VEILLEMM signal mark">
+  <!-- Signal cone: an open V that reads as a transmission aperture -->
+  <path d="M32 6 L54 58 H40.5 L32 34 L23.5 58 H10 L32 6 Z" fill="#FFB000"/>
+  <!-- Node dot: the transmitted signal -->
+  <circle cx="32" cy="14" r="3" fill="#0A0A0C"/>
+  <!-- Baseline -->
+  <path d="M8 60 H56" stroke="#FFB000" stroke-width="2"/>
+</svg>

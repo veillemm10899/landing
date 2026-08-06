@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VEILLEMM WILD — Rewilding Studio · Restore the Wild, Verify Every Tree</title>
+  <meta name="description" content="VEILLEMM is a rewilding studio founded by developer Cyrus Vergara. Native forests replanted with drone-mapped precision — every plot surveyed, every sapling tracked, every claim verified." />
+  <meta name="author" content="Cyrus Vergara (@veillemm)" />
+  <meta name="theme-color" content="#0F2317" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="VEILLEMM WILD — Rewilding Studio" />
+  <meta property="og:description" content="Native forests replanted with drone-mapped precision. Restore the wild. Verify every tree." />
+  <meta property="og:url" content="https://veillemm.netlify.app/" />
+  <meta property="og:site_name" content="VEILLEMM" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230F2317'/%3E%3Cpath d='M32 12 L42 32 L36 32 L46 48 L18 48 L28 32 L22 32 Z' fill='%23E0A136'/%3E%3C/svg%3E" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add("js");</script>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "VEILLEMM WILD",
+    "description": "Rewilding and forest restoration studio.",
+    "founder": {
+      "@type": "Person",
+      "name": "Cyrus Vergara",
+      "email": "veillemm1089@gmail.com",
+      "telephone": "+639935584785",
+      "url": "https://veillemm.netlify.app/"
+    },
+    "email": "veillemm1089@gmail.com",
+    "telephone": "+639935584785",
+    "url": "https://veillemm.netlify.app/",
+    "knowsAbout": ["Reforestation", "Native species restoration", "Drone mapping", "Carbon sequestration"]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="scroll-progress" id="scrollBar" aria-hidden="true"></div>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="VEILLEMM WILD — back to top">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" width="30" height="30">
+            <rect width="64" height="64" fill="currentColor" />
+            <path d="M32 12 L42 32 L36 32 L46 48 L18 48 L28 32 L22 32 Z" fill="var(--amber)" />
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">VEILLEMM<sup>®</sup></span>
+          <span class="brand-sub">wild / rewilding studio</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" id="siteNav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#manifesto"><span class="nav-idx">01</span> Manifesto</a></li>
+          <li><a href="#methods"><span class="nav-idx">02</span> Methods</a></li>
+          <li><a href="#plots"><span class="nav-idx">03</span> Plots</a></li>
+          <li><a href="#voices"><span class="nav-idx">04</span> Voices</a></li>
+          <li><a href="#join"><span class="nav-idx">05</span> Join</a></li>
+        </ul>
+        <a class="btn btn-primary btn-sm nav-cta" href="#join">Plant a forest</a>
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Toggle menu">
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="label mono reveal">VEILLEMM WILD — REWILDING STUDIO · EST. 2024</p>
+
+          <h1 class="hero-title">
+            <span class="mask-line"><span class="mask-inner">Restore the wild.</span></span>
+            <span class="mask-line"><span class="mask-inner mask-inner--amber">Verify every tree.</span></span>
+          </h1>
+
+          <p class="hero-sub reveal" data-delay="3">
+            VEILLEMM is a rewilding studio founded by developer
+            <strong>Cyrus Vergara</strong> — replanting native forests with
+            drone-mapped precision, and proving every sapling survives.
+            Built for the earth. Verified like code.
+          </p>
+
+          <div class="hero-actions reveal" data-delay="4">
+            <a class="btn btn-primary btn-magnetic" href="#join">Plant a forest <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost btn-magnetic" href="#plots">See the plots</a>
+          </div>
+
+          <ul class="hero-data reveal" data-delay="5">
+            <li><span class="hero-data-num" data-count="128400">0</span> trees tracked</li>
+            <li><span class="hero-data-num" data-count="96" data-suffix="%">0</span> survival</li>
+            <li><span class="hero-data-num" data-count="23">0</span> native species</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="contour-wrap parallax" data-speed="-0.05">
+            <svg class="contour-svg" viewBox="0 0 600 600">
+              <g transform="translate(300 300) scale(1) translate(-300 -300)">
+                <path class="contour contour--1" d="M300 120 C 420 120 520 210 500 330 C 480 450 380 520 260 500 C 140 480 80 380 100 260 C 120 140 180 120 300 120 Z" />
+              </g>
+              <g transform="translate(300 300) scale(0.82) translate(-300 -300)">
+                <path class="contour contour--2" d="M300 120 C 420 120 520 210 500 330 C 480 450 380 520 260 500 C 140 480 80 380 100 260 C 120 140 180 120 300 120 Z" />
+              </g>
+              <g transform="translate(300 300) scale(0.64) translate(-300 -300)">
+                <path class="contour contour--3" d="M300 120 C 420 120 520 210 500 330 C 480 450 380 520 260 500 C 140 480 80 380 100 260 C 120 140 180 120 300 120 Z" />
+              </g>
+              <g transform="translate(300 300) scale(0.46) translate(-300 -300)">
+                <path class="contour contour--4 contour--draw" d="M300 120 C 420 120 520 210 500 330 C 480 450 380 520 260 500 C 140 480 80 380 100 260 C 120 140 180 120 300 120 Z" />
+              </g>
+              <g transform="translate(300 300) scale(0.3) translate(-300 -300)">
+                <path class="contour contour--5" d="M300 120 C 420 120 520 210 500 330 C 480 450 380 520 260 500 C 140 480 80 380 100 260 C 120 140 180 120 300 120 Z" />
+              </g>
+              <!-- center pine -->
+              <g class="tree-svg">
+                <rect x="296" y="316" width="8" height="26" fill="#6B4A2F" />
+                <path d="M300 148 L330 240 L270 240 Z" fill="#2E4A24" />
+                <path d="M300 188 L336 282 L264 282 Z" fill="#3E5C33" />
+                <path d="M300 232 L342 324 L258 324 Z" fill="#4E7040" />
+              </g>
+              <!-- small trees -->
+              <g class="tree-svg tree-svg--sm">
+                <rect x="96" y="240" width="5" height="16" fill="#6B4A2F" />
+                <path d="M98 176 L116 234 L80 234 Z" fill="#3E5C33" />
+                <path d="M98 200 L120 256 L76 256 Z" fill="#4E7040" />
+              </g>
+              <g class="tree-svg tree-svg--sm tree-svg--sm2">
+                <rect x="452" y="300" width="5" height="16" fill="#6B4A2F" />
+                <path d="M454 236 L472 294 L436 294 Z" fill="#3E5C33" />
+                <path d="M454 260 L476 316 L432 316 Z" fill="#4E7040" />
+              </g>
+              <g class="tree-svg tree-svg--xs">
+                <rect x="212" y="400" width="4" height="12" fill="#6B4A2F" />
+                <path d="M214 350 L228 398 L200 398 Z" fill="#4E7040" />
+              </g>
+              <g class="tree-svg tree-svg--xs tree-svg--xs2">
+                <rect x="384" y="140" width="4" height="12" fill="#6B4A2F" />
+                <path d="M386 90 L400 138 L372 138 Z" fill="#3E5C33" />
+              </g>
+              <!-- survey markers -->
+              <circle class="marker" cx="150" cy="180" r="5" />
+              <circle class="marker marker--alt" cx="452" cy="398" r="5" />
+              <circle class="marker marker--alt2" cx="330" cy="470" r="5" />
+            </svg>
+          </div>
+
+          <div class="coord-chip coord-chip--1 mono" aria-hidden="true">14.5995° N</div>
+          <div class="coord-chip coord-chip--2 mono" aria-hidden="true">120.9842° E</div>
+          <div class="coord-chip coord-chip--3 mono" aria-hidden="true">ELEV 412 M</div>
+          <div class="coord-chip coord-chip--4 mono" aria-hidden="true">PLOT 07-A</div>
+        </div>
+      </div>
+
+      <div class="hero-footer container">
+        <p class="mono">SCROLL TO GROW ↓</p>
+        <div class="hero-footer-line" aria-hidden="true"><span class="hero-footer-fill" id="growFill"></span></div>
+        <p class="mono hero-footer-nums"><span id="heroPlot">07</span> PLOTS ACTIVE · <span id="heroRegion">04</span> REGIONS</p>
+      </div>
+    </section>
+
+    <!-- ===================== MANIFESTO ===================== -->
+    <section class="section manifesto" id="manifesto">
+      <div class="container">
+        <div class="sec-head">
+          <p class="label mono reveal"><span class="idx">01</span> The manifesto</p>
+          <h2 class="section-title reveal" data-delay="1">A developer's way of<br />giving back to <em class="em-amber">the land.</em></h2>
+        </div>
+
+        <div class="manifesto-grid">
+          <p class="lede reveal">
+            Reforestation is full of promises and short on proof. Plots that never
+            get planted, trees that never get checked, numbers that never get
+            published. Cyrus — a developer who spent a decade shipping software —
+            found that unacceptable.
+          </p>
+          <p class="reveal" data-delay="1">
+            So VEILLEMM was built like a codebase. Every plot is drone-mapped
+            before a single seed. Every sapling is logged with an ID and a
+            location. Every claim about survival is audited, quarterly, and
+            published openly. Nature doesn't need our noise.
+            <strong>It needs our follow-through.</strong>
+          </p>
+        </div>
+
+        <blockquote class="pull-quote reveal">
+          <span class="pull-num mono">“</span>
+          Nature doesn't need our noise.<br />It needs our follow-through.
+          <cite>— Cyrus Vergara, founder</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ===================== IMPACT / STATS ===================== -->
+    <section class="stats" id="impact" aria-label="VEILLEMM impact in numbers">
+      <div class="container stats-grid">
+        <div class="stat reveal">
+          <span class="stat-num"><span class="counter" data-count="128400">0</span></span>
+          <span class="stat-label mono">trees planted &amp; tracked</span>
+        </div>
+        <div class="stat reveal" data-delay="1">
+          <span class="stat-num"><span class="counter" data-count="96" data-suffix="%">0</span></span>
+          <span class="stat-label mono">survival rate, audited</span>
+        </div>
+        <div class="stat reveal" data-delay="2">
+          <span class="stat-num"><span class="counter" data-count="23">0</span></span>
+          <span class="stat-label mono">native species replanted</span>
+        </div>
+        <div class="stat reveal" data-delay="3">
+          <span class="stat-num"><span class="counter" data-count="41" data-suffix=" ha">0</span></span>
+          <span class="stat-label mono">hectares under rewilding</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== METHODS ===================== -->
+    <section class="section methods" id="methods">
+      <div class="container">
+        <div class="sec-head">
+          <p class="label mono reveal"><span class="idx">02</span> Methods</p>
+          <h2 class="section-title reveal" data-delay="1">No vibes.<br /><em class="em-amber">Only follow-through.</em></h2>
+        </div>
+
+        <ol class="method-list">
+          <li class="method-item reveal">
+            <a class="method-row" href="#join">
+              <span class="method-num mono">01</span>
+              <div class="method-body">
+                <h3 class="method-title">Ground-truth mapping</h3>
+                <p class="method-desc">Drone surveys and soil reads before a single seed touches the ground. We know the land before we work it.</p>
+              </div>
+              <span class="method-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li class="method-item reveal" data-delay="1">
+            <a class="method-row" href="#join">
+              <span class="method-num mono">02</span>
+              <div class="method-body">
+                <h3 class="method-title">Native-only planting</h3>
+                <p class="method-desc">Species from local seed banks, matched to microclimate. Never exotic. Never a monoculture.</p>
+              </div>
+              <span class="method-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li class="method-item reveal" data-delay="2">
+            <a class="method-row" href="#join">
+              <span class="method-num mono">03</span>
+              <div class="method-body">
+                <h3 class="method-title">Survivorship tracking</h3>
+                <p class="method-desc">Every tree gets an ID. Audited quarterly, published openly. If it dies, we replant it — and say so.</p>
+              </div>
+              <span class="method-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li class="method-item reveal" data-delay="3">
+            <a class="method-row" href="#join">
+              <span class="method-num mono">04</span>
+              <div class="method-body">
+                <h3 class="method-title">Community partnership</h3>
+                <p class="method-desc">Local caretakers are paid and trained. The land stays guarded — and the knowledge stays local — for a decade.</p>
+              </div>
+              <span class="method-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== PROCESS ===================== -->
+    <section class="section process" id="process">
+      <div class="container">
+        <div class="sec-head sec-head--dark">
+          <p class="label mono reveal"><span class="idx idx--dark">03</span> Process</p>
+          <h2 class="section-title section-title--dark reveal" data-delay="1">From satellite<br />to <em class="em-amber">sapling.</em></h2>
+        </div>
+
+        <ol class="process-steps">
+          <li class="process-step reveal">
+            <span class="process-num mono">01</span>
+            <h3 class="process-title">Survey</h3>
+            <p class="process-desc">Satellite + drone + soil sampling. A digital twin of the plot before anything is planted.</p>
+          </li>
+          <li class="process-step reveal" data-delay="1">
+            <span class="process-num mono">02</span>
+            <h3 class="process-title">Seed</h3>
+            <p class="process-desc">Seedlings raised in local nurseries from provenances native to the exact watershed.</p>
+          </li>
+          <li class="process-step reveal" data-delay="2">
+            <span class="process-num mono">03</span>
+            <h3 class="process-title">Plant</h3>
+            <p class="process-desc">Community crews plant in dense, layered clusters. Every sapling logged with coordinates and ID.</p>
+          </li>
+          <li class="process-step reveal" data-delay="3">
+            <span class="process-num mono">04</span>
+            <h3 class="process-title">Verify</h3>
+            <p class="process-desc">Quarterly drone flights and ground audits. Results published — survival, growth, carbon, honestly.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== PLOTS / PROJECTS ===================== -->
+    <section class="section plots" id="plots">
+      <div class="container">
+        <div class="sec-head">
+          <p class="label mono reveal"><span class="idx">04</span> Active plots</p>
+          <h2 class="section-title reveal" data-delay="1">Where the wild<br />is coming <em class="em-amber">back.</em></h2>
+        </div>
+
+        <ul class="plot-grid">
+          <li class="plot-card reveal">
+            <div class="plot-top">
+              <span class="plot-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" width="26" height="26"><path d="M24 6 L34 26 L28 26 L38 42 L10 42 L20 26 L14 26 Z" fill="var(--forest)" /><path d="M24 6 L34 26 L28 26 L38 42 L10 42 L20 26 L14 26 Z" fill="none" stroke="var(--forest)" stroke-width="2" /></svg>
+              </span>
+              <span class="plot-status mono">active</span>
+            </div>
+            <h3 class="plot-name">Sierra Madre North</h3>
+            <p class="plot-meta mono">18.2 ha · since 2022</p>
+            <p class="plot-num"><span class="counter" data-count="41200">0</span><span class="plot-unit"> trees</span></p>
+          </li>
+          <li class="plot-card reveal" data-delay="1">
+            <div class="plot-top">
+              <span class="plot-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" width="26" height="26"><path d="M24 6 L34 26 L28 26 L38 42 L10 42 L20 26 L14 26 Z" fill="var(--forest)" /><path d="M24 6 L34 26 L28 26 L38 42 L10 42 L20 26 L14 26 Z" fill="none" stroke="var(--forest)" stroke-width="2" /></svg>
+              </span>
+              <span class="plot-status mono">active</span>
+            </div>
+            <h3 class="plot-name">Palawan Lowland</h3>
+            <p class="plot-meta mono">12.6 ha · since 2023</p>
+            <p class="plot-num"><span class="counter" data-count="27900">0</span><span class="plot-unit"> trees</span></p>
+          </li>
+          <li class="plot-card reveal" data-delay="2">
+            <div class="plot-top">
+              <span class="plot-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" width="26" height="26"><path d="M24 6 L34 26 L28 26 L38 42 L10 42 L20 26 L14 26 Z" fill="var(--forest)" /><path d="M24 6 L34 26 L28 26 L38 42 L10 42 L20 26 L14 26 Z" fill="none" stroke="var(--forest)" stroke-width="2" /></svg>
+              </span>
+              <span class="plot-status mono">growing</span>
+            </div>
+            <h3 class="plot-name">Bataan Coastline</h3>
+            <p class="plot-meta mono">6.4 ha · since 2024</p>
+            <p class="plot-num"><span class="counter" data-count="14800">0</span><span class="plot-unit"> trees</span></p>
+          </li>
+          <li class="plot-card reveal" data-delay="3">
+            <div class="plot-top">
+              <span class="plot-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" width="26" height="26"><path d="M24 6 L34 26 L28 26 L38 42 L10 42 L20 26 L14 26 Z" fill="var(--forest)" /><path d="M24 6 L34 26 L28 26 L38 42 L10 42 L20 26 L14 26 Z" fill="none" stroke="var(--forest)" stroke-width="2" /></svg>
+              </span>
+              <span class="plot-status mono">fresh</span>
+            </div>
+            <h3 class="plot-name">Mindanao Uplands</h3>
+            <p class="plot-meta mono">3.8 ha · since 2025</p>
+            <p class="plot-num"><span class="counter" data-count="9500">0</span><span class="plot-unit"> trees</span></p>
+          </li>
+        </ul>
+
+        <p class="plots-note reveal mono">+ 3 new plots scouted in 2026 · waitlist open</p>
+      </div>
+    </section>
+
+    <!-- ===================== VOICES / TESTIMONIALS ===================== -->
+    <section class="section voices" id="voices">
+      <div class="container">
+        <div class="sec-head">
+          <p class="label mono reveal"><span class="idx">05</span> Voices</p>
+          <h2 class="section-title reveal" data-delay="1">Proof, from the <em class="em-amber">ground.</em></h2>
+        </div>
+
+        <div class="voices-grid">
+          <figure class="voice voice--feature reveal">
+            <span class="voice-mark" aria-hidden="true">“</span>
+            <blockquote>They flew a drone over our watershed three months after planting. The canopy was already closing. Nobody in this sector does that — nobody shows you the receipts.</blockquote>
+            <figcaption>
+              <span class="voice-name">Dir. Alma Reyes</span>
+              <span class="voice-role mono">Provincial environment office</span>
+            </figcaption>
+          </figure>
+
+          <figure class="voice reveal" data-delay="1">
+            <span class="voice-mark" aria-hidden="true">“</span>
+            <blockquote>We funded a plot as a company carbon offset. The quarterly report has drone footage, survival data, and GPS coordinates for every tree. It's the only offset we actually trust.</blockquote>
+            <figcaption>
+              <span class="voice-name">Marco Villanueva</span>
+              <span class="voice-role mono">Head of sustainability, MVT Group</span>
+            </figcaption>
+          </figure>
+
+          <figure class="voice reveal" data-delay="2">
+            <span class="voice-mark" aria-hidden="true">“</span>
+            <blockquote>Our barangay plants with them. We're paid, we're trained, and the nursery stays ours. It's the first project that didn't leave us behind after the photos.</blockquote>
+            <figcaption>
+              <span class="voice-name">Kap. Liza Santos</span>
+              <span class="voice-role mono">Barangay captain, partner community</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FOUNDER ===================== -->
+    <section class="section founder" id="founder">
+      <div class="container founder-grid">
+        <div class="founder-body">
+          <p class="label mono reveal"><span class="idx idx--dark">06</span> The founder</p>
+          <h2 class="section-title section-title--dark reveal" data-delay="1">Built by <em class="em-amber">Cyrus Vergara.</em></h2>
+          <p class="reveal" data-delay="2">
+            Developer by trade, rewilder by conviction. Cyrus spent a decade
+            shipping software that had to be measured, tested, and audited —
+            then turned the same discipline toward the land.
+          </p>
+          <p class="reveal" data-delay="3">
+            VEILLEMM WILD is his studio: part restoration outfit, part data
+            platform. The same rigor is available for your next project —
+            whether it's software, or a forest.
+          </p>
+
+          <div class="founder-actions reveal" data-delay="4">
+            <a class="btn btn-primary btn-magnetic" href="mailto:veillemm1089@gmail.com?subject=Hire%20Cyrus%20—%20Project%20Inquiry" target="_blank" rel="noopener">Hire me <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost btn-magnetic" href="https://veillemm.netlify.app/" target="_blank" rel="noopener">View portfolio ↗</a>
+            <a class="btn btn-text btn-magnetic" href="mailto:veillemm1089@gmail.com">Contact me</a>
+          </div>
+
+          <ul class="founder-meta reveal" data-delay="5">
+            <li><a href="mailto:veillemm1089@gmail.com">veillemm1089@gmail.com</a></li>
+            <li><a href="tel:+639935584785">0993 558 4785</a></li>
+            <li><a href="https://veillemm.netlify.app/" target="_blank" rel="noopener">veillemm.netlify.app</a></li>
+          </ul>
+        </div>
+
+        <div class="founder-visual reveal" data-delay="2" aria-hidden="true">
+          <svg viewBox="0 0 300 360" class="founder-svg">
+            <rect x="8" y="8" width="284" height="344" fill="none" stroke="var(--bone)" stroke-opacity="0.25" stroke-width="1.5" />
+            <text x="20" y="40" class="founder-label">VEILLEMM WILD</text>
+            <text x="20" y="60" class="founder-label founder-label--sub">PLOT SURVIVAL REPORT</text>
+            <line x1="20" y1="78" x2="280" y2="78" stroke="var(--amber)" stroke-width="2" />
+            <g class="chart">
+              <polyline points="20,240 70,232 120,222 170,206 220,182 280,150" fill="none" stroke="var(--leaf)" stroke-width="2.5" />
+              <polyline points="20,240 70,232 120,222 170,206 220,182 280,150" fill="none" stroke="var(--amber)" stroke-width="1.5" stroke-dasharray="3 5" />
+            </g>
+            <g class="chart-bars">
+              <rect x="40" y="256" width="8" height="52" fill="var(--leaf)" />
+              <rect x="72" y="248" width="8" height="60" fill="var(--leaf)" />
+              <rect x="104" y="238" width="8" height="70" fill="var(--leaf)" />
+              <rect x="136" y="226" width="8" height="82" fill="var(--moss)" />
+              <rect x="168" y="210" width="8" height="98" fill="var(--moss)" />
+              <rect x="200" y="192" width="8" height="116" fill="var(--forest)" />
+            </g>
+            <text x="20" y="330" class="founder-label">TREES: 128,400 · SURVIVAL: 96%</text>
+            <circle class="founder-seal-dot" cx="270" cy="330" r="5" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="section faq-section" id="faq">
+      <div class="container faq-grid">
+        <div class="faq-head">
+          <p class="label mono reveal"><span class="idx">07</span> FAQ</p>
+          <h2 class="section-title reveal" data-delay="1">Plain answers,<br />no <em class="em-amber">greenwash.</em></h2>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary><span class="faq-q">How do you choose planting sites?</span><span class="faq-icon" aria-hidden="true"></span></summary>
+            <p>Degraded or deforested land with a willing local partner. We survey with drones and soil tests, confirm native seed availability, then commit to a 10-year care plan — not a one-time photo op.</p>
+          </details>
+          <details class="faq-item reveal" data-delay="1">
+            <summary><span class="faq-q">Can I sponsor a tree or a plot?</span><span class="faq-icon" aria-hidden="true"></span></summary>
+            <p>Yes. Individuals can sponsor trees; companies can adopt whole plots for carbon offsets. Every sponsored tree gets an ID and appears in the public tracking dashboard.</p>
+          </details>
+          <details class="faq-item reveal" data-delay="2">
+            <summary><span class="faq-q">How is survival actually verified?</span><span class="faq-icon" aria-hidden="true"></span></summary>
+            <p>Quarterly drone flights over every plot, plus ground audits by independent local crews. We publish survival, growth, and replant numbers openly — including the failures.</p>
+          </details>
+          <details class="faq-item reveal" data-delay="3">
+            <summary><span class="faq-q">Do you work outside the Philippines?</span><span class="faq-icon" aria-hidden="true"></span></summary>
+            <p>Current plots are in the Philippines. The methods and the dashboard are built to travel — if your region has degraded land and a local partner, we're open to conversations.</p>
+          </details>
+          <details class="faq-item reveal" data-delay="4">
+            <summary><span class="faq-q">Can I volunteer?</span><span class="faq-icon" aria-hidden="true"></span></summary>
+            <p>Yes — planting days are announced per plot, and we always need hands, nurseries, and tech volunteers. Send a message through the form and tell us what you're good at.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== JOIN / CONTACT ===================== -->
+    <section class="section join" id="join">
+      <div class="container join-grid">
+        <div class="join-copy">
+          <p class="label mono reveal"><span class="idx">08</span> Join</p>
+          <h2 class="section-title reveal" data-delay="1">Adopt a plot,<br />or just <em class="em-amber">say hi.</em></h2>
+          <p class="reveal" data-delay="2">
+            Sponsor trees, commission a survey, hire Cyrus for a build — or ask a
+            question and get a straight answer. The form opens your email app,
+            addressed directly to the founder.
+          </p>
+
+          <dl class="join-details reveal" data-delay="3">
+            <div class="join-detail">
+              <dt class="mono">Email</dt>
+              <dd><a href="mailto:veillemm1089@gmail.com">veillemm1089@gmail.com</a></dd>
+            </div>
+            <div class="join-detail">
+              <dt class="mono">Phone</dt>
+              <dd><a href="tel:+639935584785">0993 558 4785</a></dd>
+            </div>
+            <div class="join-detail">
+              <dt class="mono">Portfolio</dt>
+              <dd><a href="https://veillemm.netlify.app/" target="_blank" rel="noopener">veillemm.netlify.app ↗</a></dd>
+            </div>
+            <div class="join-detail">
+              <dt class="mono">Base</dt>
+              <dd>14.5995° N · 120.9842° E</dd>
+            </div>
+          </dl>
+        </div>
+
+        <form class="join-form reveal" data-delay="2" id="joinForm" novalidate>
+          <div class="form-row">
+            <label class="mono" for="jName">Name</label>
+            <input type="text" id="jName" name="name" placeholder="Your name" required autocomplete="name" />
+          </div>
+          <div class="form-row">
+            <label class="mono" for="jEmail">Email</label>
+            <input type="email" id="jEmail" name="email" placeholder="you@example.com" required autocomplete="email" />
+          </div>
+          <div class="form-row">
+            <label class="mono" for="jType">I am a…</label>
+            <div class="select-wrap">
+              <select id="jType" name="type">
+                <option>Individual · sponsor trees</option>
+                <option>Company · adopt a plot</option>
+                <option>Community / NGO partner</option>
+                <option>Volunteer</option>
+                <option>Hire Cyrus for a project</option>
+                <option>Just asking</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <label class="mono" for="jMessage">Message</label>
+            <textarea id="jMessage" name="message" rows="4" placeholder="Your message…" required></textarea>
+          </div>
+          <button class="btn btn-primary btn-block btn-magnetic" type="submit">
+            Send message <span class="arrow" aria-hidden="true">→</span>
+          </button>
+          <p class="form-hint" id="formHint">Opens your email app — reply within a day.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#top" aria-label="VEILLEMM — back to top">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" width="28" height="28">
+              <rect width="64" height="64" fill="currentColor" />
+              <path d="M32 12 L42 32 L36 32 L46 48 L18 48 L28 32 L22 32 Z" fill="var(--amber)" />
+            </svg>
+          </span>
+          <span class="brand-text">
+            <span class="brand-name">VEILLEMM<sup>®</sup></span>
+            <span class="brand-sub">wild / rewilding studio</span>
+          </span>
+        </a>
+        <p class="footer-tagline">Restore the wild.<br />Verify every tree.</p>
+      </div>
+
+      <nav class="footer-col" aria-label="Footer">
+        <h3 class="footer-heading mono">Index</h3>
+        <ul>
+          <li><a href="#manifesto">01 · Manifesto</a></li>
+          <li><a href="#methods">02 · Methods</a></li>
+          <li><a href="#plots">03 · Plots</a></li>
+          <li><a href="#voices">04 · Voices</a></li>
+          <li><a href="#faq">05 · FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h3 class="footer-heading mono">Contact</h3>
+        <ul>
+          <li><a href="mailto:veillemm1089@gmail.com">veillemm1089@gmail.com</a></li>
+          <li><a href="tel:+639935584785">0993 558 4785</a></li>
+          <li><a href="https://veillemm.netlify.app/" target="_blank" rel="noopener">Portfolio ↗</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-heading mono">Field notes</h3>
+        <ul>
+          <li class="muted">Planting days announced per plot</li>
+          <li class="muted">Public dashboards · open data</li>
+          <li class="muted">10-year stewardship pledge</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> VEILLEMM WILD. All rights reserved.</p>
+      <p class="footer-made">Designed &amp; built by <a href="https://veillemm.netlify.app/" target="_blank" rel="noopener">Cyrus Vergara</a> · <span class="mono">14.5995° N, 120.9842° E</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

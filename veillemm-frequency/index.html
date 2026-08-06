@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>VEILLEMM — Cyrus Vergara · Software Engineer & Creative Developer</title>
+  <meta name="description" content="VEILLEMM is the frequency atelier of Cyrus Vergara — a software engineer and creative developer building digital products with the precision of engineering and the obsession of craft. Most software is noise. I build signal.">
+  <meta name="author" content="Cyrus Vergara">
+  <meta name="theme-color" content="#0A0A0C">
+  <link rel="canonical" href="https://veillemm.netlify.app/">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="VEILLEMM">
+  <meta property="og:title" content="VEILLEMM — Signal over noise.">
+  <meta property="og:description" content="The frequency atelier of Cyrus Vergara. Software engineering and creative development, tuned to signal.">
+  <meta property="og:url" content="https://veillemm.netlify.app/">
+  <meta property="og:image" content="assets/images/og-cover.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="VEILLEMM — Signal over noise.">
+  <meta name="twitter:description" content="The frequency atelier of Cyrus Vergara. Software engineering and creative development, tuned to signal.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Cyrus Vergara",
+    "alternateName": "VEILLEMM",
+    "url": "https://veillemm.netlify.app/",
+    "email": "mailto:veillemm1089@gmail.com",
+    "telephone": "+639935584785",
+    "jobTitle": "Software Engineer & Creative Developer",
+    "address": { "@type": "PostalAddress", "addressLocality": "Manila", "addressCountry": "PH" },
+    "knowsAbout": ["Software Engineering", "Creative Development", "Interface Design", "Interaction Systems", "Product Engineering"]
+  }
+  </script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Atmosphere layers -->
+  <div class="grain" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <svg class="preloader-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+        <path d="M32 6 L54 58 H40.5 L32 34 L23.5 58 H10 L32 6 Z" fill="#FFB000"/>
+        <circle cx="32" cy="14" r="3" fill="#0A0A0C"/>
+      </svg>
+      <p class="preloader-word">VEILLEMM</p>
+      <p class="preloader-line"><span id="preloader-pct">000</span>&nbsp;— establishing signal</p>
+      <div class="preloader-bar"><span id="preloader-fill"></span></div>
+    </div>
+  </div>
+
+  <!-- Custom cursor -->
+  <div class="cursor" aria-hidden="true">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a class="logo" href="#top" aria-label="VEILLEMM — back to top">
+        <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <path d="M32 6 L54 58 H40.5 L32 34 L23.5 58 H10 L32 6 Z" fill="#FFB000"/>
+          <circle cx="32" cy="14" r="3" fill="#0A0A0C"/>
+        </svg>
+        <span class="logo-word">VEILLEMM</span>
+        <span class="logo-status"><i class="dot" aria-hidden="true"></i>open</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#manifesto">Manifesto</a>
+        <a href="#channels">Channels</a>
+        <a href="#transmissions">Transmissions</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-right">
+        <span class="header-clock mono" aria-label="Manila local time"><span id="clock-nav">--:--:--</span> MNL</span>
+        <a class="btn btn-primary btn-sm" href="mailto:veillemm1089@gmail.com?subject=Hire%20VEILLEMM" data-magnetic>Hire Me</a>
+        <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="menu" id="mobile-menu" aria-hidden="true">
+    <nav class="menu-nav" aria-label="Mobile">
+      <a href="#manifesto" style="--i:0"><span class="menu-idx">01</span>Manifesto</a>
+      <a href="#channels" style="--i:1"><span class="menu-idx">02</span>Channels</a>
+      <a href="#transmissions" style="--i:2"><span class="menu-idx">03</span>Transmissions</a>
+      <a href="#process" style="--i:3"><span class="menu-idx">04</span>Process</a>
+      <a href="#contact" style="--i:4"><span class="menu-idx">05</span>Contact</a>
+    </nav>
+    <div class="menu-foot">
+      <a class="menu-cta" href="mailto:veillemm1089@gmail.com?subject=Hire%20VEILLEMM" data-magnetic>Hire Me →</a>
+      <p class="mono">veillemm1089@gmail.com<br>0993 558 4785</p>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ============ HERO — TRANSMISSION 00 ============ -->
+    <section class="hero" id="top" aria-label="Introduction">
+      <canvas class="hero-field" id="hero-field" aria-hidden="true"></canvas>
+
+      <div class="hero-inner">
+        <p class="hero-overline fx mono" style="--d:.05s">VEILLEMM — FREQUENCY ATELIER · MANILA, PH</p>
+
+        <h1 class="hero-title">
+          <span class="fx mask-line"><span style="--d:.12s">Signal over</span></span>
+          <span class="fx mask-line"><span style="--d:.22s"><em>noise.</em></span></span>
+        </h1>
+
+        <p class="hero-sub fx" style="--d:.38s">
+          I'm <strong>Cyrus Vergara</strong> — a software engineer who designs and builds digital
+          products with the precision of engineering and the obsession of craft.
+          VEILLEMM is the atelier where signal gets built.
+        </p>
+
+        <div class="hero-cta fx" style="--d:.5s">
+          <a class="btn btn-primary" href="mailto:veillemm1089@gmail.com?subject=Hire%20VEILLEMM" data-magnetic>Hire Me <span aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="https://veillemm.netlify.app/" target="_blank" rel="noopener">View Portfolio <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+
+      <div class="hero-meta fx mono" style="--d:.68s" aria-hidden="true">
+        <span>26.5° N / 122.0° E</span>
+        <span class="hero-meta-sep"></span>
+        <span>STATUS: <span class="ok">AVAILABLE FOR NEW TRANSMISSIONS</span></span>
+        <span class="hero-meta-sep"></span>
+        <span class="hero-signal">SIGNAL
+          <span class="meter"><span class="meter-fill" id="hero-meter"></span></span>
+          <span id="hero-meter-val">74</span>%
+        </span>
+        <span class="hero-meta-sep"></span>
+        <span class="scroll-hint">SCROLL <span aria-hidden="true">↓</span></span>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Creative Development</span><i>✦</i>
+        <span>Product Engineering</span><i>✦</i>
+        <span>Interface Design</span><i>✦</i>
+        <span>Interactive Systems</span><i>✦</i>
+        <span>Signal over Noise</span><i>✦</i>
+        <span>Creative Development</span><i>✦</i>
+        <span>Product Engineering</span><i>✦</i>
+        <span>Interface Design</span><i>✦</i>
+        <span>Interactive Systems</span><i>✦</i>
+        <span>Signal over Noise</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ============ MANIFESTO — TRANSMISSION 01 ============ -->
+    <section class="manifesto" id="manifesto" aria-label="Manifesto">
+      <div class="container">
+        <p class="section-label mono" data-reveal>TRANSMISSION 01 — MANIFESTO</p>
+
+        <h2 class="manifesto-statement" data-reveal aria-label="Most software is noise. I build signal.">
+          <span class="mask-line"><span style="--d:.05s">Most software is</span></span>
+          <span class="mask-line"><span style="--d:.14s"><em>noise.</em></span></span>
+          <span class="mask-line"><span style="--d:.24s">I build <em class="accent">signal.</em></span></span>
+        </h2>
+
+        <div class="manifesto-body">
+          <p class="manifesto-lead" data-reveal>
+            VEILLEMM is where I design and engineer digital products. No templates,
+            no trend-chasing — every project gets a point of view, a system, and the
+            discipline to execute it.
+          </p>
+          <p class="manifesto-copy" data-reveal>
+            I believe the web deserves the same obsession that film, architecture, and music
+            have always had: craft people can feel, even when they can't name it. That is the
+            difference between software and an experience.
+          </p>
+        </div>
+
+        <blockquote class="manifesto-quote" data-reveal>
+          “Design is not decoration. It's the difference between <em>software</em> and an <em>experience</em>.”
+        </blockquote>
+
+        <div class="principles">
+          <article class="principle" data-reveal>
+            <p class="principle-idx mono">PHASE 01</p>
+            <h3 class="principle-name">Listen</h3>
+            <p class="principle-copy">Every product starts as a problem worth understanding. I research the audience, the context, and the constraints — then design around truth, not assumptions.</p>
+          </article>
+          <article class="principle" data-reveal style="--d:.12s">
+            <p class="principle-idx mono">PHASE 02</p>
+            <h3 class="principle-name">Shape</h3>
+            <p class="principle-copy">Ideas become systems: information architecture, interaction language, visual identity. Deliberate decisions — each one earning its place in the final work.</p>
+          </article>
+          <article class="principle" data-reveal style="--d:.24s">
+            <p class="principle-idx mono">PHASE 03</p>
+            <h3 class="principle-name">Transmit</h3>
+            <p class="principle-copy">Engineering with taste. I build fast, accessible, production-grade software — then tune it until it feels inevitable.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CHANNELS — TRANSMISSION 02 ============ -->
+    <section class="channels" id="channels" aria-label="Capabilities">
+      <div class="container">
+        <p class="section-label mono" data-reveal>TRANSMISSION 02 — CHANNELS</p>
+        <h2 class="section-head" data-reveal>What I <em>transmit.</em></h2>
+
+        <div class="channels-list">
+          <article class="channel" data-reveal>
+            <button class="channel-head" aria-expanded="false">
+              <span class="channel-idx mono">CH 01</span>
+              <h3 class="channel-name">Creative Development</h3>
+              <span class="channel-toggle" aria-hidden="true">+</span>
+            </button>
+            <div class="channel-panel">
+              <div class="channel-panel-inner">
+              <p class="channel-desc">Interfaces with a pulse — motion systems, generative visuals, and micro-interactions engineered with intent, not decoration.</p>
+              <ul class="chip-row" aria-label="Deliverables">
+                <li>WebGL &amp; Canvas</li><li>Motion systems</li><li>Creative coding</li><li>Prototypes</li>
+              </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="channel" data-reveal style="--d:.08s">
+            <button class="channel-head" aria-expanded="false">
+              <span class="channel-idx mono">CH 02</span>
+              <h3 class="channel-name">Product Engineering</h3>
+              <span class="channel-toggle" aria-hidden="true">+</span>
+            </button>
+            <div class="channel-panel">
+              <div class="channel-panel-inner">
+              <p class="channel-desc">Full-stack systems that ship on time and stay fast at scale — architecture, APIs, and deployment treated as one continuous craft.</p>
+              <ul class="chip-row" aria-label="Deliverables">
+                <li>JavaScript / TypeScript</li><li>Node.js</li><li>APIs</li><li>DevOps</li>
+              </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="channel" data-reveal style="--d:.16s">
+            <button class="channel-head" aria-expanded="false">
+              <span class="channel-idx mono">CH 03</span>
+              <h3 class="channel-name">Interface Design</h3>
+              <span class="channel-toggle" aria-hidden="true">+</span>
+            </button>
+            <div class="channel-panel">
+              <div class="channel-panel-inner">
+              <p class="channel-desc">Design systems where every pixel earns its place — from concept and prototype to an accessible, production-ready build.</p>
+              <ul class="chip-row" aria-label="Deliverables">
+                <li>UI / UX</li><li>Design systems</li><li>Accessibility</li><li>Prototyping</li>
+              </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="channel" data-reveal style="--d:.24s">
+            <button class="channel-head" aria-expanded="false">
+              <span class="channel-idx mono">CH 04</span>
+              <h3 class="channel-name">Interactive Systems</h3>
+              <span class="channel-toggle" aria-hidden="true">+</span>
+            </button>
+            <div class="channel-panel">
+              <div class="channel-panel-inner">
+              <p class="channel-desc">Experiences that respond to people in real time — generative, data-driven, and alive. Software that listens back.</p>
+              <ul class="chip-row" aria-label="Deliverables">
+                <li>Real-time data</li><li>Data visualization</li><li>Audio-reactive</li><li>Installations</li>
+              </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRANSMISSIONS — TRANSMISSION 03 ============ -->
+    <section class="transmissions" id="transmissions" aria-label="Selected work">
+      <div class="trans-head-wrap">
+        <div class="container trans-head">
+          <p class="section-label mono" data-reveal>TRANSMISSION 03 — SELECTED TRANSMISSIONS</p>
+          <h2 class="section-head" data-reveal>Proof of <em>signal.</em></h2>
+        </div>
+      </div>
+
+      <div class="trans-scroll" id="trans-scroll">
+        <div class="trans-viewport">
+          <div class="trans-track" id="trans-track">
+
+            <article class="trans-slide">
+              <div class="trans-visual" data-reveal>
+                <canvas data-canvas="waves" aria-hidden="true"></canvas>
+                <span class="trans-visual-tag mono">LIVE GENERATIVE</span>
+              </div>
+              <div class="trans-body" data-reveal style="--d:.1s">
+                <p class="trans-id mono">T-001</p>
+                <h3 class="trans-title">Signal / Vector</h3>
+                <p class="trans-tag mono">Creative coding</p>
+                <p class="trans-desc">An audio-reactive wave study — every input bends the field in real time. The interface disappears into the signal.</p>
+                <a class="btn btn-ghost btn-sm" href="https://veillemm.netlify.app/" target="_blank" rel="noopener">View transmission <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+
+            <article class="trans-slide">
+              <div class="trans-visual" data-reveal>
+                <canvas data-canvas="orbit" aria-hidden="true"></canvas>
+                <span class="trans-visual-tag mono">LIVE GENERATIVE</span>
+              </div>
+              <div class="trans-body" data-reveal style="--d:.1s">
+                <p class="trans-id mono">T-002</p>
+                <h3 class="trans-title">Aurora Console</h3>
+                <p class="trans-tag mono">Data interface</p>
+                <p class="trans-desc">A real-time analytics interface designed for clarity at a thousand data points — calm under load.</p>
+                <a class="btn btn-ghost btn-sm" href="https://veillemm.netlify.app/" target="_blank" rel="noopener">View transmission <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+
+            <article class="trans-slide">
+              <div class="trans-visual" data-reveal>
+                <canvas data-canvas="pulse" aria-hidden="true"></canvas>
+                <span class="trans-visual-tag mono">LIVE GENERATIVE</span>
+              </div>
+              <div class="trans-body" data-reveal style="--d:.1s">
+                <p class="trans-id mono">T-003</p>
+                <h3 class="trans-title">Orbit</h3>
+                <p class="trans-tag mono">Spatial interface</p>
+                <p class="trans-desc">A spatial navigation concept — depth treated as a first-class UI dimension, not a decorative afterthought.</p>
+                <a class="btn btn-ghost btn-sm" href="https://veillemm.netlify.app/" target="_blank" rel="noopener">View transmission <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+
+            <article class="trans-slide">
+              <div class="trans-visual" data-reveal>
+                <canvas data-canvas="grid" aria-hidden="true"></canvas>
+                <span class="trans-visual-tag mono">LIVE GENERATIVE</span>
+              </div>
+              <div class="trans-body" data-reveal style="--d:.1s">
+                <p class="trans-id mono">T-004</p>
+                <h3 class="trans-title">Pulse Grid</h3>
+                <p class="trans-tag mono">Generative identity</p>
+                <p class="trans-desc">A generative brand system — an identity that breathes, scales across media, and never repeats itself.</p>
+                <a class="btn btn-ghost btn-sm" href="https://veillemm.netlify.app/" target="_blank" rel="noopener">View transmission <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+
+            <div class="trans-end">
+              <p class="trans-end-label mono">YOUR PROJECT COULD BE NEXT</p>
+              <a class="btn btn-primary" href="mailto:veillemm1089@gmail.com?subject=Hire%20VEILLEMM" data-magnetic>Start a transmission <span aria-hidden="true">→</span></a>
+            </div>
+
+          </div>
+          <div class="trans-progress" aria-hidden="true"><span id="trans-progress-fill"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS — TRANSMISSION 04 ============ -->
+    <section class="process" id="process" aria-label="Process">
+      <div class="container">
+        <p class="section-label mono" data-reveal>TRANSMISSION 04 — OPERATING SYSTEM</p>
+        <h2 class="section-head" data-reveal>How a transmission <em>gets built.</em></h2>
+
+        <div class="process-grid">
+          <div class="terminal" data-reveal role="img" aria-label="Terminal showing the VEILLEMM process">
+            <div class="terminal-bar">
+              <span class="terminal-dot" style="--c:#FF5D4D"></span>
+              <span class="terminal-dot" style="--c:#FFB000"></span>
+              <span class="terminal-dot" style="--c:#3ECFA0"></span>
+              <span class="terminal-title mono">veillemm@atelier — zsh</span>
+            </div>
+            <pre class="terminal-body mono" id="terminal" aria-hidden="true"></pre>
+          </div>
+
+          <aside class="process-side" data-reveal style="--d:.15s">
+            <h3 class="process-side-title">Operating principles</h3>
+            <ul class="process-principles">
+              <li><span class="ok mono">✓</span> Radical transparency — you see the work as it happens, in plain language.</li>
+              <li><span class="ok mono">✓</span> Communication is a feature — updates arrive before you ask for them.</li>
+              <li><span class="ok mono">✓</span> Quality gate — nothing ships until it's fast, accessible, and finished.</li>
+              <li><span class="ok mono">✓</span> You own everything — code, design, and decisions, documented and delivered.</li>
+            </ul>
+            <p class="process-note">From first call to launch, you work directly with the person building your product. No account managers. No hand-offs.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT — TRANSMISSION 05 ============ -->
+    <section class="contact" id="contact" aria-label="Contact">
+      <div class="container">
+        <p class="section-label mono" data-reveal>TRANSMISSION 05 — CONTACT</p>
+
+        <h2 class="contact-title" data-reveal>
+          <span class="mask-line"><span style="--d:.05s">Have a signal worth</span></span>
+          <span class="mask-line"><span style="--d:.14s"><em>transmitting?</em></span></span>
+        </h2>
+
+        <p class="contact-sub" data-reveal>
+          Tell me what you're building. I'll tell you honestly whether I'm the right person to build it.
+        </p>
+
+        <div class="contact-channels" data-reveal style="--d:.1s">
+          <a class="contact-big mono" href="mailto:veillemm1089@gmail.com">veillemm1089@gmail.com <span aria-hidden="true">↗</span></a>
+          <a class="contact-big mono" href="tel:+639935584785">0993 558 4785 <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="contact-cta" data-reveal style="--d:.2s">
+          <a class="btn btn-primary" href="mailto:veillemm1089@gmail.com?subject=Hire%20VEILLEMM" data-magnetic>Hire Me <span aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="mailto:veillemm1089@gmail.com">Contact Me <span aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="https://veillemm.netlify.app/" target="_blank" rel="noopener">View Portfolio <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <p class="availability mono" data-reveal><span class="dot" aria-hidden="true"></span> Currently accepting new projects — Q4 2026</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer" aria-label="Footer">
+    <p class="footer-word" aria-hidden="true">VEILLEMM</p>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <p class="mono footer-label">THE FREQUENCY ATELIER</p>
+        <p>Designed &amp; engineered by <strong>Cyrus Vergara</strong>, Manila, PH. Every frame on this page is original — no templates, no stock.</p>
+      </div>
+      <nav class="footer-col" aria-label="Footer navigation">
+        <p class="mono footer-label">NAVIGATE</p>
+        <a href="#manifesto">Manifesto</a>
+        <a href="#channels">Channels</a>
+        <a href="#transmissions">Transmissions</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-col">
+        <p class="mono footer-label">REACH ME</p>
+        <a href="mailto:veillemm1089@gmail.com">veillemm1089@gmail.com</a>
+        <a href="tel:+639935584785">0993 558 4785</a>
+        <a href="https://veillemm.netlify.app/" target="_blank" rel="noopener">veillemm.netlify.app ↗</a>
+      </div>
+      <div class="footer-col">
+        <p class="mono footer-label">ELSEWHERE</p>
+        <p>@veillemm across platforms.</p>
+        <p class="mono footer-clock">MNL <span id="clock-footer">--:--:--</span></p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 VEILLEMM — Cyrus Vergara. All rights reserved.</p>
+      <p class="mono">BUILT WITH OBSESSION — SIGNAL OVER NOISE</p>
+    </div>
+  </footer>
+
+  <script src="js/util.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/preloader.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/reveal.js"></script>
+  <script src="js/canvas.js"></script>
+  <script src="js/terminal.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VEILLEMM — Landing Page Samples by Cyrus Vergara</title>
+  <meta name="description" content="Landing page samples designed and built by Cyrus Vergara (@veillemm). Full projects live in the Main Portfolio." />
+  <meta name="author" content="Cyrus Vergara" />
+  <meta name="theme-color" content="#F5F3EE" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="VEILLEMM — Landing Page Samples by Cyrus Vergara" />
+  <meta property="og:description" content="Landing page samples designed and engineered by Cyrus Vergara. Full websites live in the Main Portfolio." />
+  <meta property="og:url" content="https://veillemm.netlify.app/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234F46E5'/%3E%3Cpath d='M10 8l6 8 6-8v16' stroke='%23fff' stroke-width='2.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Cyrus Vergara",
+    "alternateName": "@veillemm",
+    "jobTitle": "Software Engineer & Creative Developer",
+    "url": "https://veillemm.netlify.app/",
+    "email": "mailto:veillemm1089@gmail.com",
+    "telephone": "+639935584785"
+  }
+  </script>
+  <script>document.documentElement.classList.add('js');</script>
+  <noscript>
+    <style>
+      .reveal { opacity: 1 !important; transform: none !important; }
+      .card { animation: none !important; opacity: 1 !important; transform: none !important; }
+    </style>
+  </noscript>
+</head>
+
+<body>
+  <a class="skip-link" href="#samples">Skip to the samples</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="VEILLEMM — back to top">
+        <span class="brand__mark" aria-hidden="true">V</span>
+        <span class="brand__name">VEILLEMM</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#samples">Samples</a>
+        <a href="#creator">Creator</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn--primary btn--sm" href="https://veillemm.netlify.app/" target="_blank" rel="noopener">Main Portfolio ↗</a>
+        <button class="burger" id="burger" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ MOBILE MENU ============ -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav class="mobile-nav" aria-label="Mobile">
+      <a href="#samples">Samples</a>
+      <a href="#creator">Creator</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn--primary" href="https://veillemm.netlify.app/" target="_blank" rel="noopener">Main Portfolio ↗</a>
+    </nav>
+  </div>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <p class="kicker reveal">The Sample Library · @veillemm</p>
+        <h1 class="hero-title reveal" style="--d:.05s">
+          Landing page samples,<br />
+          in <em>one place.</em>
+        </h1>
+        <div class="hero-bottom reveal" style="--d:.1s">
+          <p class="hero-sub">
+            A library of my landing page samples — built while exploring layouts, ideas,
+            and visual directions. My full websites live in the Main Portfolio.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn--primary" href="#samples">Browse Samples <span aria-hidden="true">↓</span></a>
+            <a class="btn btn--ghost" href="https://veillemm.netlify.app/" target="_blank" rel="noopener">Main Portfolio ↗</a>
+          </div>
+        </div>
+        <p class="hero-count mono reveal" style="--d:.15s"><span id="hero-count">0</span> samples and counting</p>
+      </div>
+    </section>
+
+    <!-- ============ SAMPLES ============ -->
+    <section class="samples" id="samples" aria-labelledby="samples-title">
+      <div class="wrap">
+        <div class="samples-head reveal">
+          <div>
+            <p class="kicker">01 · The Samples</p>
+            <h2 class="section-title" id="samples-title">Pick a site, <em>step inside.</em></h2>
+          </div>
+          <label class="search" for="search-input">
+            <span class="search__icon mono" aria-hidden="true">⌕</span>
+            <input id="search-input" type="search" placeholder="Search samples…" autocomplete="off" aria-label="Search samples" />
+          </label>
+        </div>
+
+        <ul class="grid" id="grid"></ul>
+        <p class="grid-status mono" id="grid-status" role="status" aria-live="polite"></p>
+
+        <noscript>
+          <p class="mono small noscript-note">JavaScript is off — see everything at
+          <a href="https://veillemm.netlify.app/" target="_blank" rel="noopener">veillemm.netlify.app</a>.</p>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- ============ CREATOR ============ -->
+    <section class="creator" id="creator" aria-labelledby="creator-title">
+      <div class="wrap creator-grid">
+        <div class="creator-photo reveal">
+          <img class="creator-photo__img" src="assets/me.jpg" alt="Cyrus Vergara — founder of VEILLEMM" width="1080" height="1080" loading="lazy" />
+          <span class="creator-photo__ring" aria-hidden="true"></span>
+        </div>
+        <div class="creator-body">
+          <p class="kicker reveal">02 · The Creator</p>
+          <h2 class="section-title reveal" id="creator-title">Cyrus Vergara<br /><em>@veillemm</em></h2>
+          <p class="reveal">
+            Software engineer and creative developer — founder of VEILLEMM. I design, engineer, and ship
+            websites end-to-end: from first wireframe to final deploy, by one pair of hands.
+          </p>
+          <ul class="roles reveal">
+            <li><span class="mono">01</span>Software Engineer</li>
+            <li><span class="mono">02</span>Creative Developer</li>
+            <li><span class="mono">03</span>UI / UX Designer</li>
+            <li><span class="mono">04</span>Game Developer</li>
+            <li><span class="mono">05</span>Full-Stack Engineer</li>
+          </ul>
+          <div class="creator-actions reveal">
+            <a class="btn btn--primary" href="https://veillemm.netlify.app/" target="_blank" rel="noopener">View Main Portfolio ↗</a>
+            <a class="btn btn--ghost" href="mailto:veillemm1089@gmail.com">Hire Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <div class="contact-card reveal">
+          <div class="contact-copy">
+            <p class="kicker">03 · Say Hello</p>
+            <h2 class="section-title" id="contact-title">Send me a <em>message.</em></h2>
+            <p>
+              Have a project in mind, or just want to say hi? Drop a message — it opens your mail app,
+              addressed straight to me. I reply within 48 hours.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:veillemm1089@gmail.com">
+                <span class="mono">Email</span>veillemm1089@gmail.com
+              </a>
+              <a href="tel:+639935584785">
+                <span class="mono">Phone</span>0993 558 4785
+              </a>
+              <a href="https://veillemm.netlify.app/" target="_blank" rel="noopener">
+                <span class="mono">Portfolio</span>veillemm.netlify.app ↗
+              </a>
+              <a href="https://veillemm.netlify.app/" target="_blank" rel="noopener">
+                <span class="mono">Handle</span>@veillemm
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contact-form" action="mailto:veillemm1089@gmail.com" novalidate>
+            <div class="field">
+              <label for="c-name">Your name</label>
+              <input id="c-name" name="name" type="text" placeholder="Juan dela Cruz" autocomplete="name" required />
+            </div>
+            <div class="field">
+              <label for="c-email">Your email</label>
+              <input id="c-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required />
+            </div>
+            <div class="field">
+              <label for="c-message">Your message</label>
+              <textarea id="c-message" name="message" rows="4" placeholder="Tell me about your project…" required></textarea>
+            </div>
+            <button class="btn btn--primary btn--block" type="submit">Send Message ↗</button>
+            <p class="form-note mono small" id="form-note" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p class="footer-brand">VEILLEMM<span>®</span></p>
+      <p class="footer-tag mono small">designed &amp; engineered by Cyrus Vergara</p>
+      <a class="to-top mono small" href="#top">Back to top ↑</a>
+    </div>
+    <div class="wrap footer-bottom">
+      <p class="mono small">© <span id="year">2026</span> Cyrus Vergara — VEILLEMM. All rights reserved.</p>
+      <p class="mono small">veillemm1089@gmail.com · 09935584785</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

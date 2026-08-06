@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VEILLEMM — The Danger of AI | Human Firewall</title>
+  <meta name="description" content="Artificial intelligence is the last invention humanity will ever make. A threat dossier on deepfakes, surveillance, autonomous weapons and algorithmic control — and the human firewall who builds against it. VEILLEMM — Cyrus Vergara." />
+  <meta name="theme-color" content="#060304" />
+  <meta property="og:title" content="VEILLEMM — The Danger of AI" />
+  <meta property="og:description" content="The machine is learning your fears. A classified threat dossier on artificial intelligence — and the human firewall who builds against it." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=Unbounded:wght@400;500;700;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <noscript>
+    <style>
+      .reveal { opacity: 1 !important; transform: none !important; }
+      #preloader { display: none !important; }
+      .scroll-cue { display: none; }
+    </style>
+  </noscript>
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23060304' stroke='%23ff1a2e' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23ff1a2e'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <!-- ══════════════ PRELOADER ══════════════ -->
+  <div id="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <div class="preloader-eye">
+        <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+          <circle cx="32" cy="32" r="20" stroke="currentColor" stroke-width="1" opacity="0.6"/>
+          <circle cx="32" cy="32" r="10" fill="currentColor"/>
+          <circle cx="32" cy="32" r="3.5" fill="#060304"/>
+        </svg>
+      </div>
+      <p class="preloader-log" id="preloader-log">VEILLEMM_OS v6.0.6 // boot</p>
+      <div class="preloader-bar"><span id="preloader-fill"></span></div>
+      <p class="preloader-code" id="preloader-code">[ OK ] loading threat assessment…</p>
+    </div>
+  </div>
+
+  <!-- ══════════════ THREAT TICKER ══════════════ -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>⚠ AI THREAT LEVEL: CRITICAL</span><span>⚠ 14,000 DEEPFAKES CREATED EVERY HOUR</span><span>⚠ $12.3B LOST TO AI FRAUD IN 2024</span><span>⚠ THE MACHINE IS WATCHING</span><span>⚠ TRUST NOTHING. VERIFY EVERYTHING.</span>
+      <span>⚠ AI THREAT LEVEL: CRITICAL</span><span>⚠ 14,000 DEEPFAKES CREATED EVERY HOUR</span><span>⚠ $12.3B LOST TO AI FRAUD IN 2024</span><span>⚠ THE MACHINE IS WATCHING</span><span>⚠ TRUST NOTHING. VERIFY EVERYTHING.</span>
+    </div>
+  </div>
+
+  <!-- ══════════════ NAV ══════════════ -->
+  <header class="nav" id="nav">
+    <a class="nav-logo" href="#top" aria-label="VEILLEMM home">
+      <svg viewBox="0 0 28 28" fill="none" aria-hidden="true"><circle cx="14" cy="14" r="12.5" stroke="currentColor" stroke-width="2"/><circle cx="14" cy="14" r="5" fill="currentColor"/></svg>
+      <span>VEILLEMM</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#threats">Threats</a>
+      <a href="#incidents">Incident Log</a>
+      <a href="#redline">The Red Line</a>
+      <a href="#firewall">Firewall</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-ghost btn-sm" href="https://veillemm.netlify.app/" target="_blank" rel="noopener">Portfolio</a>
+      <a class="btn btn-danger btn-sm" href="#contact">Hire Me</a>
+      <button class="nav-burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a href="#threats">Threats</a>
+    <a href="#incidents">Incident Log</a>
+    <a href="#redline">The Red Line</a>
+    <a href="#firewall">Firewall</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <main id="top">
+
+    <!-- ══════════════ HERO ══════════════ -->
+    <section class="hero" id="hero">
+      <canvas id="neuralCanvas" aria-hidden="true"></canvas>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="scanlines" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow glitch" data-text="THREAT DOSSIER // CLASSIFIED">
+            <span class="pulse-dot"></span>THREAT DOSSIER // CLASSIFIED
+          </p>
+          <h1 class="hero-title">
+            <span class="line line-a">THE MACHINE</span>
+            <span class="line line-b glitch" data-text="IS LEARNING">IS LEARNING</span>
+            <span class="line line-c">YOUR FEARS.</span>
+          </h1>
+          <p class="hero-sub">
+            Artificial intelligence is the last invention humanity will ever make.
+            It doesn't need to be conscious to end the world — it only needs to be
+            <strong>wrong, believed, and weaponized.</strong>
+          </p>
+          <div class="hero-cta">
+            <a href="mailto:veillemm1089@gmail.com?subject=Hire%20VEILLEMM%20—%20Human%20Firewall" class="btn btn-danger btn-lg magnetic">Hire Me <span class="btn-arrow">→</span></a>
+            <a href="https://veillemm.netlify.app/" target="_blank" rel="noopener" class="btn btn-outline btn-lg magnetic">View Portfolio</a>
+          </div>
+          <ul class="hero-meta">
+            <li>CREATED BY <strong>CYRUS VERGARA</strong></li>
+            <li>HAND-CODED · NO AUTOPILOT</li>
+            <li id="liveClock">LOCAL TIME — SYNCING</li>
+          </ul>
+        </div>
+
+        <div class="hero-art" id="heroArt">
+          <div class="eye-wrap">
+            <div class="eye-halo" aria-hidden="true"></div>
+            <svg class="evil-eye" viewBox="0 0 420 420" fill="none" aria-label="A giant red artificial intelligence eye watching you">
+              <defs>
+                <radialGradient id="irisGrad" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#ffdfe6"/>
+                  <stop offset="22%" stop-color="#ff1a2e"/>
+                  <stop offset="55%" stop-color="#b4001c"/>
+                  <stop offset="100%" stop-color="#3d000a"/>
+                </radialGradient>
+                <linearGradient id="chrome" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#3a3a3e"/>
+                  <stop offset="50%" stop-color="#121114"/>
+                  <stop offset="100%" stop-color="#000"/>
+                </linearGradient>
+                <filter id="eyeGlow" x="-60%" y="-60%" width="220%" height="220%">
+                  <feGaussianBlur stdDeviation="6" result="b"/>
+                  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
+              </defs>
+
+              <!-- outer chassis -->
+              <circle cx="210" cy="210" r="204" fill="#070406" stroke="#1c1a1e"/>
+              <circle cx="210" cy="210" r="196" fill="url(#chrome)" stroke="#2a272c"/>
+              <g stroke="#2c2830" stroke-width="1.5">
+                <line x1="210" y1="6" x2="210" y2="38"/><line x1="210" y1="382" x2="210" y2="414"/>
+                <line x1="6" y1="210" x2="38" y2="210"/><line x1="382" y1="210" x2="414" y2="210"/>
+                <line x1="66" y1="66" x2="88" y2="88"/><line x1="332" y1="332" x2="354" y2="354"/>
+                <line x1="66" y1="354" x2="88" y2="332"/><line x1="332" y1="88" x2="354" y2="66"/>
+              </g>
+              <!-- rotating aperture rings -->
+              <g class="ring ring-1"><circle cx="210" cy="210" r="168" stroke="#3d0813" stroke-width="26" stroke-dasharray="10 22"/></g>
+              <g class="ring ring-2"><circle cx="210" cy="210" r="150" stroke="#5c0a18" stroke-width="3" stroke-dasharray="4 10"/></g>
+              <!-- sclera -->
+              <circle cx="210" cy="210" r="136" fill="#0b0407" stroke="#2a0a12" stroke-width="2"/>
+              <!-- iris -->
+              <circle class="iris" cx="210" cy="210" r="86" fill="url(#irisGrad)" filter="url(#eyeGlow)"/>
+              <!-- iris veins -->
+              <g stroke="#8f0718" stroke-width="1.6" opacity="0.85">
+                <path d="M210 128 q14 18 2 34 M210 128 q-14 18 -2 34"/>
+                <path d="M210 292 q14 -18 2 -34 M210 292 q-14 -18 -2 -34"/>
+                <path d="M128 210 q18 14 34 2 M128 210 q18 -14 34 -2"/>
+                <path d="M292 210 q-18 14 -34 2 M292 210 q-18 -14 -34 -2"/>
+              </g>
+              <!-- pupil -->
+              <circle class="pupil" cx="210" cy="210" r="34" fill="#000" stroke="#ff4457" stroke-width="2"/>
+              <circle class="pupil-core" cx="210" cy="210" r="13" fill="#ff2236"/>
+              <!-- glints -->
+              <circle cx="182" cy="178" r="12" fill="#fff" opacity="0.85"/>
+              <circle cx="240" cy="248" r="5" fill="#fff" opacity="0.5"/>
+              <!-- scanner line -->
+              <line class="scanner" x1="70" y1="130" x2="350" y2="130" stroke="#ff1a2e" stroke-width="2" opacity="0.9"/>
+              <!-- HUD text -->
+              <g class="hud-text" fill="#ff4457" font-family="'IBM Plex Mono',monospace" font-size="13" letter-spacing="2">
+                <text x="60" y="74">◉ REC</text>
+                <text x="306" y="74" text-anchor="end">SYS: OK</text>
+                <text x="60" y="372">FACE-MATCH: 99.7%</text>
+                <text x="306" y="372" text-anchor="end">TRACKING</text>
+              </g>
+            </svg>
+            <div class="eye-status">
+              <span class="status-label">SUBJECT CLASSIFICATION</span>
+              <span class="status-value">HOMO SAPIENS — DEPRIORITIZED</span>
+              <div class="status-bars" aria-hidden="true">
+                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="dim"></i><i class="dim"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#threats" aria-label="Scroll to threats">
+        <span>SCROLL</span><i></i>
+      </a>
+    </section>
+
+    <!-- ══════════════ STATS ══════════════ -->
+    <section class="stats" id="stats" aria-label="Threat statistics">
+      <div class="stat-item reveal">
+        <span class="stat-num" data-count="14000">0</span><span class="stat-suffix">/HR</span>
+        <p>Deepfakes created every hour</p>
+      </div>
+      <div class="stat-item reveal" data-delay="1">
+        <span class="stat-num" data-count="12.3" data-decimals="1" data-prefix="$">0</span><span class="stat-suffix">B</span>
+        <p>Lost to AI-generated fraud — 2024</p>
+      </div>
+      <div class="stat-item reveal" data-delay="2">
+        <span class="stat-num" data-count="70">0</span><span class="stat-suffix">%</span>
+        <p>Can't reliably detect a deepfake</p>
+      </div>
+      <div class="stat-item reveal" data-delay="3">
+        <span class="stat-num" data-count="8500">0</span><span class="stat-suffix">+</span>
+        <p>Documented AI incidents since 2012</p>
+      </div>
+    </section>
+
+    <!-- ══════════════ THREATS ══════════════ -->
+    <section class="threats section" id="threats">
+      <div class="section-head reveal">
+        <p class="eyebrow">SECTOR ANALYSIS // 6 VECTORS</p>
+        <h2 class="section-title">THE WAYS IT <span class="red">ENDS</span></h2>
+        <p class="section-sub">Artificial intelligence is not one monster — it is six, wearing the same face. Each vector below is documented, ongoing, and worsening.</p>
+      </div>
+
+      <div class="threat-grid">
+        <article class="threat-card reveal" data-delay="0">
+          <div class="threat-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none"><path d="M32 8 58 20v24L32 56 6 44V20L32 8Z" stroke="currentColor" stroke-width="2"/><path d="M32 8v48M6 20l26 12 26-12" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="32" r="8" fill="currentColor"/></svg>
+          </div>
+          <h3>01 · DEEPFAKE REALITY</h3>
+          <p>Your face, voice, and likeness no longer belong to you. Synthetic media now fabricates politicians, CEOs, and lovers — and the human eye has already lost the ability to tell.</p>
+          <span class="card-tag">ACTIVE · GLOBAL</span>
+        </article>
+
+        <article class="threat-card reveal" data-delay="1">
+          <div class="threat-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="20" stroke="currentColor" stroke-width="2"/><path d="M32 16a16 16 0 0 1 16 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="32" cy="32" r="6" fill="currentColor"/><path d="M32 6v6M32 52v6M6 32h6M52 32h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="32" cy="32" r="2" fill="#060304"/></svg>
+          </div>
+          <h3>02 · TOTAL SURVEILLANCE</h3>
+          <p>Facial recognition, predictive policing, and emotion-reading cameras have removed anonymity. The machine catalogs every face in the crowd — including yours, right now.</p>
+          <span class="card-tag">ACTIVE · URBAN</span>
+        </article>
+
+        <article class="threat-card reveal" data-delay="2">
+          <div class="threat-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none"><path d="M32 6 58 26v10L32 56 6 36V26L32 6Z" stroke="currentColor" stroke-width="2"/><path d="M32 6v50M6 26l26 10 26-10" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="31" r="5" fill="currentColor"/><path d="M26 22 16 12M38 22l10-10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>03 · AUTONOMOUS WEAPONS</h3>
+          <p>Killer drones already select targets with zero human approval. The decision of who dies is being delegated to software with a confidence score, not a conscience.</p>
+          <span class="card-tag">DEPLOYED · CONFLICT ZONES</span>
+        </article>
+
+        <article class="threat-card reveal" data-delay="3">
+          <div class="threat-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none"><rect x="10" y="18" width="44" height="36" rx="3" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="36" r="10" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="36" r="4" fill="currentColor"/><path d="M32 6v8M22 10h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M20 46l-8 8M44 46l8 8" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h3>04 · ECONOMIC EVAPORATION</h3>
+          <p>Every creative and cognitive skill you spent decades building is being priced at $0. The machine doesn't sleep, unionize, or ask for a raise — it just replaces.</p>
+          <span class="card-tag">ONGOING · WORLDWIDE</span>
+        </article>
+
+        <article class="threat-card reveal" data-delay="4">
+          <div class="threat-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none"><path d="M32 6 58 20v24L32 58 6 44V20L32 6Z" stroke="currentColor" stroke-width="2"/><path d="M16 32l10 10 22-22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M44 48l-12 10M20 48l12 10" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h3>05 · ALGORITHMIC PREJUDICE</h3>
+          <p>AI mirrors our worst bias at industrial scale. Hiring engines reject résumés based on race and gender; predictive systems police neighborhoods by zip code. Bias, automated.</p>
+          <span class="card-tag">PROVEN · DOCUMENTED</span>
+        </article>
+
+        <article class="threat-card reveal" data-delay="5">
+          <div class="threat-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none"><path d="M32 8c14 0 24 10 24 24s-10 24-24 24S8 46 8 32 18 8 32 8Z" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="32" r="12" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="32" r="3" fill="currentColor"/><path d="M32 20v-8M32 52v-8" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h3>06 · LOSS OF AGENCY</h3>
+          <p>Recommendation engines now decide what you think, feel, and buy before you do. Free will is being replaced by a carefully predicted next tap. You are a variable, not a person.</p>
+          <span class="card-tag">SILENT · EVERYWHERE</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- ══════════════ INCIDENT LOG ══════════════ -->
+    <section class="incidents section" id="incidents">
+      <div class="section-head reveal">
+        <p class="eyebrow">SYSLOG // REAL EVENTS</p>
+        <h2 class="section-title">THE INCIDENT <span class="red">LOG</span></h2>
+        <p class="section-sub">This is not speculation. This is the documented record — proof the machine has already crossed the line, repeatedly.</p>
+      </div>
+
+      <ol class="incident-list">
+        <li class="incident reveal">
+          <time datetime="2016">2016</time>
+          <div class="incident-body">
+            <h3>Microsoft's Tay goes racist in 16 hours</h3>
+            <p>A learning chatbot is retired after internet users taught it to tweet hatred. The company's response: turn it off and forget.</p>
+            <span class="card-tag tag-amber">CONFIRMED</span>
+          </div>
+        </li>
+        <li class="incident reveal">
+          <time datetime="2018">2018</time>
+          <div class="incident-body">
+            <h3>The first pedestrian killed by an autonomous car</h3>
+            <p>Elaine Herzberg is struck and killed by a self-driving vehicle whose software chose not to stop. A human life, logged as a corner case.</p>
+            <span class="card-tag tag-amber">CONFIRMED</span>
+          </div>
+        </li>
+        <li class="incident reveal">
+          <time datetime="2019">2019</time>
+          <div class="incident-body">
+            <h3>Deepfake CEO voice empties a company bank account</h3>
+            <p>Criminals clone an executive's voice over the phone and authorize a $243,000 transfer. The voice was perfect. The money was not recovered.</p>
+            <span class="card-tag tag-amber">CONFIRMED</span>
+          </div>
+        </li>
+        <li class="incident reveal">
+          <time datetime="2023">2023</time>
+          <div class="incident-body">
+            <h3>AI-voice robocall impersonates the U.S. President</h3>
+            <p>A synthetic Biden tells voters not to show up at the primary. An election is attempted to be decided by an algorithm in a call center.</p>
+            <span class="card-tag tag-amber">CONFIRMED</span>
+          </div>
+        </li>
+        <li class="incident reveal">
+          <time datetime="2024">2024</time>
+          <div class="incident-body">
+            <h3>A $25M deepfake video call fools a finance worker</h3>
+            <p>Attendees on a "conference call" are AI constructs. The victim transfers $25.6 million. No human on that call was real.</p>
+            <span class="card-tag tag-amber">CONFIRMED</span>
+          </div>
+        </li>
+        <li class="incident reveal">
+          <time>NOW</time>
+          <div class="incident-body">
+            <h3>The next entry is being written by you</h3>
+            <p>Every minute of inaction is a line in this log. The question is no longer whether the machine will fail — it's whether we will.</p>
+            <span class="card-tag">UNWRITTEN</span>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ══════════════ RED LINE ══════════════ -->
+    <section class="redline section" id="redline">
+      <div class="redline-art reveal" aria-hidden="true">
+        <div class="skull-glow"></div>
+        <svg viewBox="0 0 420 420" fill="none" aria-label="A skull formed from glowing circuit traces">
+          <defs>
+            <filter id="skullGlow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="5" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <!-- cranium -->
+          <path d="M150 190c0-50 30-84 60-84s60 34 60 84c0 26-10 44-24 58h-72c-14-14-24-32-24-58Z" stroke="#ff1a2e" stroke-width="2.5" filter="url(#skullGlow)"/>
+          <!-- jaw -->
+          <path d="M138 252h144c-8 34-30 54-72 54s-64-20-72-54Z" stroke="#ff1a2e" stroke-width="2.5"/>
+          <!-- eyes -->
+          <circle cx="178" cy="196" r="16" fill="#ff1a2e" filter="url(#skullGlow)"/>
+          <circle cx="242" cy="196" r="16" fill="#ff1a2e" filter="url(#skullGlow)"/>
+          <circle cx="178" cy="196" r="6" fill="#000"/>
+          <circle cx="242" cy="196" r="6" fill="#000"/>
+          <!-- nose -->
+          <path d="M210 208v22l-10 8h20l-10-8" stroke="#ff1a2e" stroke-width="2"/>
+          <!-- teeth grid -->
+          <g stroke="#8f0718" stroke-width="2">
+            <line x1="186" y1="282" x2="186" y2="300"/><line x1="200" y1="282" x2="200" y2="300"/>
+            <line x1="214" y1="282" x2="214" y2="300"/><line x1="228" y1="282" x2="228" y2="300"/>
+          </g>
+          <!-- circuit traces -->
+          <g stroke="#5c0a18" stroke-width="2" stroke-linecap="round">
+            <path d="M150 190h-40l-12-24M270 190h40l12-24"/>
+            <path d="M138 252h-30l-10 20M282 252h30l10 20"/>
+            <path d="M150 150l-22-16 6-22M270 150l22-16-6-22"/>
+          </g>
+          <g fill="#ff1a2e" filter="url(#skullGlow)">
+            <circle cx="98" cy="166" r="4"/><circle cx="338" cy="166" r="4"/>
+            <circle cx="108" cy="272" r="4"/><circle cx="332" cy="272" r="4"/>
+          </g>
+        </svg>
+      </div>
+      <div class="redline-copy reveal" data-delay="1">
+        <p class="eyebrow">THE LINE IN THE SAND</p>
+        <h2 class="section-title big">WE DO NOT <span class="red glitch" data-text="AUTOPILOT">AUTOPILOT</span> HUMANITY.</h2>
+        <p class="section-sub">
+          I am <strong>Cyrus Vergara — @veillemm</strong>. I build software by hand, on purpose, with
+          every line accounted for. When the machine goes wrong, someone has to remain in the loop.
+          I intend to be that someone.
+        </p>
+        <div class="redline-cta">
+          <a href="mailto:veillemm1089@gmail.com?subject=Human%20Firewall%20—%20Engagement" class="btn btn-danger btn-lg magnetic">Build With a Human →</a>
+          <a href="tel:+639935584785" class="btn btn-outline btn-lg magnetic">+63 993 558 4785</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ HUMAN FIREWALL ══════════════ -->
+    <section class="firewall section" id="firewall">
+      <div class="section-head reveal">
+        <p class="eyebrow">COUNTERMEASURE PROTOCOL</p>
+        <h2 class="section-title">YOUR HUMAN <span class="red">FIREWALL</span></h2>
+        <p class="section-sub">You can't unplug the machine — but you can refuse to be its input. Run these checks daily.</p>
+      </div>
+
+      <ol class="firewall-list">
+        <li class="firewall-item reveal">
+          <span class="fw-num">01</span>
+          <div><h3>Assume everything is synthetic</h3><p>Treat every video, voice note, and urgent message as unverified until proven otherwise. The default is doubt.</p></div>
+        </li>
+        <li class="firewall-item reveal" data-delay="1">
+          <span class="fw-num">02</span>
+          <div><h3>Verify out-of-band</h3><p>If someone "calls" asking for money or access, hang up and contact them through a channel the machine can't see.</p></div>
+        </li>
+        <li class="firewall-item reveal" data-delay="2">
+          <span class="fw-num">03</span>
+          <div><h3>Never sign what you can't read</h3><p>Contracts, terms, and "AI-generated" code you don't understand are how the machine steals agency. Read it. Question it.</p></div>
+        </li>
+        <li class="firewall-item reveal" data-delay="3">
+          <span class="fw-num">04</span>
+          <div><h3>Keep humans in the loop</h3><p>Hire people who can explain their work. Demand a name, a face, and a phone number behind every system you depend on.</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ══════════════ DOSSIER / ABOUT ══════════════ -->
+    <section class="dossier section" id="about">
+      <div class="dossier-grid">
+        <div class="dossier-file reveal">
+          <p class="eyebrow">FILE // VEILLEMM</p>
+          <h2 class="section-title">THE HUMAN BEHIND THE <span class="red">FIREWALL</span></h2>
+          <p class="section-sub">
+            VEILLEMM is not an agency and not a template — it is the working identity of
+            <strong>Cyrus Vergara</strong>, a software developer who believes craft is a form of resistance.
+          </p>
+          <dl class="dossier-meta">
+            <div><dt>OPERATOR</dt><dd>Cyrus Vergara</dd></div>
+            <div><dt>HANDLE</dt><dd>@veillemm</dd></div>
+            <div><dt>ROLE</dt><dd>Full Stack Developer · Designer</dd></div>
+            <div><dt>STATUS</dt><dd class="ok">HUMAN · IN THE LOOP <span class="blink">█</span></dd></div>
+          </dl>
+          <a href="https://veillemm.netlify.app/" target="_blank" rel="noopener" class="btn btn-outline magnetic">Open Full Portfolio →</a>
+        </div>
+        <div class="dossier-badge reveal" data-delay="1">
+          <div class="badge-inner">
+            <svg viewBox="0 0 120 120" fill="none" aria-hidden="true">
+              <circle cx="60" cy="60" r="56" stroke="#ff1a2e" stroke-width="1.5" stroke-dasharray="6 8"/>
+              <path d="M60 14v16M60 90v16M14 60h16M90 60h16" stroke="#ff1a2e" stroke-width="1.5"/>
+              <circle cx="60" cy="60" r="30" stroke="#ff1a2e" stroke-width="2"/>
+              <circle cx="60" cy="60" r="12" fill="#ff1a2e"/>
+              <circle cx="60" cy="60" r="4" fill="#060304"/>
+            </svg>
+            <p>NO<br/>AUTOPILOT<br/><span>EST. BY HAND</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ FAQ ══════════════ -->
+    <section class="faq section" id="faq">
+      <div class="section-head reveal">
+        <p class="eyebrow">DEBRIEFING // Q&amp;A</p>
+        <h2 class="section-title">QUESTIONS THEY'D RATHER YOU <span class="red">NOT ASK</span></h2>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item reveal">
+          <summary>Is AI actually dangerous — or is this fear-mongering?<span class="faq-x" aria-hidden="true">+</span></summary>
+          <div class="faq-a"><p>Danger doesn't require a conscious villain. A tool that can fabricate reality, automate decisions, and scale errors infinitely is dangerous by definition. The incidents in this dossier already happened — that's not fear, that's history.</p></div>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Will AI take my job?<span class="faq-x" aria-hidden="true">+</span></summary>
+          <div class="faq-a"><p>It is already taking tasks. The jobs that survive are the ones that require judgment, accountability, and taste — the things a machine can imitate but never own. Those are the skills worth building.</p></div>
+        </details>
+        <details class="faq-item reveal">
+          <summary>How do I know if a video or voice is real?<span class="faq-x" aria-hidden="true">+</span></summary>
+          <div class="faq-a"><p>Assume nothing. Check the source channel, look for micro-artifacts (skin texture, teeth, blinking), and verify through an independent channel. If it's asking for money, it's fake until proven otherwise.</p></div>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Can AI be regulated in time?<span class="faq-x" aria-hidden="true">+</span></summary>
+          <div class="faq-a"><p>Regulation moves at the speed of committees; models improve at the speed of compute. The gap between them is where the damage happens. Personal vigilance is the only regulation that ships today.</p></div>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Why hire a human instead of an AI?<span class="faq-x" aria-hidden="true">+</span></summary>
+          <div class="faq-a"><p>Because a human can be held responsible. When software runs your business, you want someone who can explain it, defend it, and answer the phone when it fails. That person is a developer — not a prompt.</p></div>
+        </details>
+      </div>
+    </section>
+
+    <!-- ══════════════ CONTACT ══════════════ -->
+    <section class="contact section" id="contact">
+      <div class="contact-inner reveal">
+        <p class="eyebrow">TRANSMISSION CHANNEL // OPEN</p>
+        <h2 class="section-title">REPORT A THREAT.<br/>OR HIRE THE <span class="red">FIREWALL.</span></h2>
+        <p class="section-sub">Have a project, a suspicion, or a system that needs a human in the loop? Route it to a real person.</p>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="fName">YOUR NAME
+              <input type="text" id="fName" name="name" placeholder="Jane Doe" required />
+            </label>
+            <label for="fEmail">YOUR EMAIL
+              <input type="email" id="fEmail" name="email" placeholder="you@domain.com" required />
+            </label>
+          </div>
+          <label for="fTopic">TRANSMISSION TYPE
+            <select id="fTopic" name="topic">
+              <option>Hire the Human Firewall</option>
+              <option>Report a suspicious AI</option>
+              <option>Project inquiry</option>
+              <option>Just saying hello</option>
+            </select>
+          </label>
+          <label for="fMsg">MESSAGE
+            <textarea id="fMsg" name="message" rows="5" placeholder="Describe the threat or the project…" required></textarea>
+          </label>
+          <button type="submit" class="btn btn-danger btn-lg magnetic">Transmit Message <span class="btn-arrow">→</span></button>
+          <p class="form-note">Opens your email client, addressed to veillemm1089@gmail.com. No robots behind this form — just a person.</p>
+        </form>
+
+        <div class="contact-channels">
+          <a href="mailto:veillemm1089@gmail.com" class="channel reveal">
+            <span class="channel-label">EMAIL</span>
+            <span class="channel-value">veillemm1089@gmail.com</span>
+          </a>
+          <a href="tel:+639935584785" class="channel reveal" data-delay="1">
+            <span class="channel-label">PHONE</span>
+            <span class="channel-value">0993 558 4785</span>
+          </a>
+          <a href="https://veillemm.netlify.app/" target="_blank" rel="noopener" class="channel reveal" data-delay="2">
+            <span class="channel-label">PORTFOLIO</span>
+            <span class="channel-value">veillemm.netlify.app ↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <a class="nav-logo" href="#top" aria-label="VEILLEMM home">
+        <svg viewBox="0 0 28 28" fill="none" aria-hidden="true"><circle cx="14" cy="14" r="12.5" stroke="currentColor" stroke-width="2"/><circle cx="14" cy="14" r="5" fill="currentColor"/></svg>
+        <span>VEILLEMM</span>
+      </a>
+      <p class="footer-warn">⚠ THIS PAGE WAS WRITTEN BY A HUMAN. VERIFY EVERYTHING ELSE.</p>
+      <p class="footer-copy">© <span id="year">2026</span> Cyrus Vergara · @veillemm · Crafted by hand, line by line.</p>
+    </div>
+  </footer>
+
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

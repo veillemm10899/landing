@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VEILLEMM Coffee Roasters — Slow Brews for Fast Minds</title>
+  <meta name="description" content="VEILLEMM is a specialty coffee roastery built by developer Cyrus Vergara. Small-batch single-origin beans, roasted in-house, brewed as a daily ritual. Reserve a table or order your bag." />
+  <meta name="author" content="Cyrus Vergara (@veillemm)" />
+  <meta name="theme-color" content="#241A10" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="VEILLEMM Coffee Roasters — Slow Brews for Fast Minds" />
+  <meta property="og:description" content="A specialty slow-bar roastery by developer Cyrus Vergara. Small-batch beans, house-roasted, brewed as a daily ritual for people who build things." />
+  <meta property="og:url" content="https://veillemm.netlify.app/" />
+  <meta property="og:site_name" content="VEILLEMM" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23241A10'/%3E%3Cpath d='M20 42 L32 20 L44 42 Z' fill='%23F6EFE3'/%3E%3Ccircle cx='32' cy='20' r='5' fill='%23B96A2F'/%3E%3C/svg%3E" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,0..100,0..100;1,9..144,300..900,0..100,0..100&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add("js");</script>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "VEILLEMM Coffee Roasters",
+    "founder": {
+      "@type": "Person",
+      "name": "Cyrus Vergara",
+      "email": "veillemm1089@gmail.com",
+      "telephone": "+639935584785",
+      "url": "https://veillemm.netlify.app/"
+    },
+    "email": "veillemm1089@gmail.com",
+    "telephone": "+639935584785",
+    "url": "https://veillemm.netlify.app/",
+    "servesCuisine": "Specialty Coffee",
+    "priceRange": "₱160 - ₱220",
+    "openingHours": "Mo-Sa 07:00-19:00",
+    "slogan": "Slow brews for fast minds."
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="VEILLEMM Coffee — back to top">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" width="34" height="34">
+            <circle cx="32" cy="32" r="30" fill="currentColor" />
+            <path d="M20 42 L32 20 L44 42 Z" fill="var(--paper)" />
+            <circle cx="32" cy="20" r="5" fill="var(--copper)" />
+          </svg>
+        </span>
+        <span class="brand-name">VEILLEMM<sup>®</sup></span>
+        <span class="brand-sub">coffee roasters</span>
+      </a>
+
+      <nav class="site-nav" id="siteNav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#ritual">Ritual</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#brew">Brew</a></li>
+          <li><a href="#stories">Stories</a></li>
+          <li><a href="#visit">Visit</a></li>
+        </ul>
+        <a class="btn btn-primary btn-sm nav-cta" href="#visit">Reserve a table</a>
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Toggle menu">
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="top">
+      <div class="hero-blob hero-blob--matcha parallax" data-speed="-0.06" aria-hidden="true"></div>
+      <div class="hero-blob hero-blob--copper parallax" data-speed="-0.1" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal"><span class="eyebrow-dot"></span> Single origin · Small batch · House roasted</p>
+          <h1 class="hero-title reveal" data-delay="1">
+            Slow brews<br />
+            for <em class="italic-marker">fast minds.</em>
+          </h1>
+          <p class="hero-sub reveal" data-delay="2">
+            VEILLEMM is a specialty roastery built by developer
+            <strong>Cyrus Vergara</strong> — small-batch beans, roasted in-house,
+            and brewed as a daily ritual for people who make things.
+          </p>
+          <div class="hero-actions reveal" data-delay="3">
+            <a class="btn btn-primary btn-magnetic" href="#visit">Reserve a table</a>
+            <a class="btn btn-ghost btn-magnetic" href="#menu">View the menu <span class="arrow" aria-hidden="true">↓</span></a>
+          </div>
+          <ul class="hero-trust reveal" data-delay="4">
+            <li><span class="stars" aria-hidden="true">★★★★★</span> 4.9 from 200+ reviews</li>
+            <li>Roasted in-house</li>
+            <li>Oat &amp; vegan options</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal" data-delay="2">
+          <div class="cup-stage" role="img" aria-label="Illustration of a VEILLEMM espresso cup with rising steam, floating coffee beans and a rotating badge">
+            <div class="cup-halo" aria-hidden="true"></div>
+            <svg class="cup-badge" viewBox="0 0 200 200" aria-hidden="true">
+              <defs>
+                <path id="badgeCircle" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0" />
+              </defs>
+              <circle cx="100" cy="100" r="78" fill="none" stroke="var(--ink)" stroke-opacity="0.14" stroke-width="1.2" />
+              <circle cx="100" cy="100" r="88" fill="none" stroke="var(--copper)" stroke-opacity="0.4" stroke-width="1" stroke-dasharray="2 6" />
+              <text>
+                <textPath href="#badgeCircle" startOffset="0" class="badge-text">
+                  FRESH ROAST • SINGLE ORIGIN • SMALL BATCH •
+                </textPath>
+              </text>
+            </svg>
+
+            <svg class="cup-svg" viewBox="0 0 400 460" aria-hidden="true">
+              <!-- saucer -->
+              <ellipse cx="200" cy="408" rx="118" ry="20" fill="var(--ink)" />
+              <ellipse cx="200" cy="404" rx="118" ry="20" fill="var(--cream)" />
+              <ellipse cx="200" cy="402" rx="86" ry="13" fill="var(--ink)" />
+              <!-- cup body -->
+              <path d="M112 178
+                       C 112 330, 150 396, 200 396
+                       C 250 396, 288 330, 288 178 Z"
+                    fill="var(--ink)" />
+              <path d="M116 180
+                       C 116 322, 152 386, 200 386
+                       C 248 386, 284 322, 284 180 Z"
+                    fill="var(--cream)" opacity="0.92" />
+              <!-- handle -->
+              <path d="M284 214 C 336 214, 340 268, 296 292" fill="none" stroke="var(--ink)" stroke-width="16" stroke-linecap="round" />
+              <path d="M284 214 C 336 214, 340 268, 296 292" fill="none" stroke="var(--cream)" stroke-width="8" stroke-linecap="round" />
+              <!-- coffee surface -->
+              <ellipse cx="200" cy="178" rx="88" ry="16" fill="var(--ink)" />
+              <path d="M126 174 C 150 182, 178 168, 200 174 C 224 180, 250 170, 274 176"
+                    fill="none" stroke="var(--copper)" stroke-width="4" stroke-linecap="round" />
+              <!-- steam -->
+              <g class="steam-group">
+                <path class="steam steam-1" d="M172 150 C 162 120, 182 104, 170 74" fill="none" stroke="var(--ink)" stroke-width="6" stroke-linecap="round" />
+                <path class="steam steam-2" d="M200 144 C 190 116, 210 98, 200 66" fill="none" stroke="var(--copper)" stroke-width="6" stroke-linecap="round" />
+                <path class="steam steam-3" d="M228 150 C 218 124, 236 106, 226 78" fill="none" stroke="var(--ink)" stroke-width="6" stroke-linecap="round" />
+              </g>
+              <!-- bean cluster -->
+              <g class="bean-cluster">
+                <ellipse cx="96" cy="300" rx="17" ry="10" transform="rotate(-28 96 300)" fill="var(--ink)" />
+                <path d="M88 295 C 96 302, 96 310, 92 314" fill="none" stroke="var(--cream)" stroke-width="2.4" stroke-linecap="round" />
+                <ellipse cx="318" cy="330" rx="16" ry="9.5" transform="rotate(24 318 330)" fill="var(--matcha)" />
+                <path d="M326 326 C 318 333, 318 340, 322 344" fill="none" stroke="var(--cream)" stroke-width="2.2" stroke-linecap="round" />
+              </g>
+            </svg>
+
+            <span class="float-bean float-bean--1" aria-hidden="true">
+              <svg viewBox="0 0 40 24" width="40" height="24"><ellipse cx="20" cy="12" rx="18" ry="10" fill="var(--ink)"/><path d="M12 8 C 20 14, 20 20, 16 23" fill="none" stroke="var(--cream)" stroke-width="3" stroke-linecap="round"/></svg>
+            </span>
+            <span class="float-bean float-bean--2" aria-hidden="true">
+              <svg viewBox="0 0 40 24" width="34" height="20"><ellipse cx="20" cy="12" rx="18" ry="10" fill="var(--copper)"/><path d="M26 7 C 18 13, 18 19, 22 23" fill="none" stroke="var(--cream)" stroke-width="3" stroke-linecap="round"/></svg>
+            </span>
+            <span class="float-bean float-bean--3" aria-hidden="true">
+              <svg viewBox="0 0 40 24" width="28" height="17"><ellipse cx="20" cy="12" rx="18" ry="10" fill="var(--matcha)"/><path d="M12 8 C 20 14, 20 20, 16 23" fill="none" stroke="var(--cream)" stroke-width="3" stroke-linecap="round"/></svg>
+            </span>
+            <span class="float-leaf" aria-hidden="true">
+              <svg viewBox="0 0 48 48" width="46" height="46"><path d="M38 10 C 20 8, 8 20, 10 38 C 28 40, 40 28, 38 10 Z" fill="var(--matcha)"/><path d="M36 12 C 26 22, 18 30, 12 36" fill="none" stroke="var(--cream)" stroke-width="2.4" stroke-linecap="round"/></svg>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Single origin</span><i>☕</i><span>Small batch</span><i>·</i><span>Slow bar</span><i>☕</i><span>House roasted</span><i>·</i><span>Vegan oat options</span><i>☕</i><span>Brew cards included</span><i>·</i>
+          <span>Single origin</span><i>☕</i><span>Small batch</span><i>·</i><span>Slow bar</span><i>☕</i><span>House roasted</span><i>·</i><span>Vegan oat options</span><i>☕</i><span>Brew cards included</span><i>·</i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== RITUAL / STORY ===================== -->
+    <section class="section ritual" id="ritual">
+      <div class="container ritual-grid">
+        <div class="ritual-index reveal">
+          <p class="eyebrow">Our story — 01</p>
+          <span class="giant-number" aria-hidden="true">01</span>
+        </div>
+        <div class="ritual-body">
+          <h2 class="section-title reveal">A developer's obsession,<br />poured into a <em class="italic-marker">cup.</em></h2>
+          <p class="lede reveal" data-delay="1">
+            VEILLEMM began in Cyrus Vergara's kitchen — one scale, one kettle, and a
+            stubborn pursuit of the perfect pour. Between commits, between sprints,
+            the ritual stayed.
+          </p>
+          <p class="reveal" data-delay="2">
+            What started as a developer's morning habit became a roastery obsessed
+            with precision: every bean sourced from farmers we've met in person,
+            every batch logged like a code commit, every cup measured to the gram.
+            We treat coffee the way we treat software — we iterate until it's right.
+          </p>
+          <blockquote class="pull-quote reveal" data-delay="3">
+            <span class="pull-quote-mark" aria-hidden="true">“</span>
+            Same obsession. Different output.
+            <cite>— Cyrus Vergara, founder</cite>
+          </blockquote>
+          <div class="ritual-chips reveal" data-delay="4">
+            <span class="chip">Direct trade</span>
+            <span class="chip">Roasted Tue &amp; Fri</span>
+            <span class="chip">Brew cards</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MENU ===================== -->
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">The signature pour — 02</p>
+          <h2 class="section-title">Drinks worth <em class="italic-marker">writing home about.</em></h2>
+          <p class="section-note">Dialed daily. Every drink can be made oat, soy, or lactose-free. Beans by the bag — ask at the bar.</p>
+        </div>
+
+        <ol class="menu-list">
+          <li class="menu-item reveal">
+            <div class="menu-row">
+              <span class="menu-num" aria-hidden="true">01</span>
+              <div class="menu-info">
+                <h3 class="menu-name">Veillemm Espresso</h3>
+                <p class="menu-notes">House blend · dark cacao, muscovado, orange peel</p>
+              </div>
+              <span class="menu-price">₱160</span>
+            </div>
+          </li>
+          <li class="menu-item reveal" data-delay="1">
+            <div class="menu-row">
+              <span class="menu-num" aria-hidden="true">02</span>
+              <div class="menu-info">
+                <h3 class="menu-name">Matcha Cloud</h3>
+                <p class="menu-notes">Ceremonial matcha · cold oat foam · maple drizzle</p>
+                <span class="menu-tag">best seller</span>
+              </div>
+              <span class="menu-price">₱185</span>
+            </div>
+          </li>
+          <li class="menu-item reveal" data-delay="2">
+            <div class="menu-row">
+              <span class="menu-num" aria-hidden="true">03</span>
+              <div class="menu-info">
+                <h3 class="menu-name">Salted Caramel Slow Bar</h3>
+                <p class="menu-notes">18-hour cold brew · smoked salt · cream top</p>
+              </div>
+              <span class="menu-price">₱175</span>
+            </div>
+          </li>
+          <li class="menu-item reveal" data-delay="3">
+            <div class="menu-row">
+              <span class="menu-num" aria-hidden="true">04</span>
+              <div class="menu-info">
+                <h3 class="menu-name">Fourth Wave Pourover</h3>
+                <p class="menu-notes">Rotating single origin · V60 · brew card included</p>
+                <span class="menu-tag">limited</span>
+              </div>
+              <span class="menu-price">₱220</span>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== BREW / PROCESS ===================== -->
+    <section class="section brew" id="brew">
+      <div class="container">
+        <div class="section-head section-head--light reveal">
+          <p class="eyebrow">Bean to cup — 03</p>
+          <h2 class="section-title">Four steps.<br />Zero shortcuts.</h2>
+        </div>
+
+        <ol class="process">
+          <li class="process-step reveal">
+            <span class="process-num" aria-hidden="true">01</span>
+            <h3 class="process-title">Source</h3>
+            <p class="process-body">Direct-trade partners we've met in person. Every lot traceable to the farm it came from.</p>
+          </li>
+          <li class="process-step reveal" data-delay="1">
+            <span class="process-num" aria-hidden="true">02</span>
+            <h3 class="process-title">Roast</h3>
+            <p class="process-body">Small batches, logged like code commits. Profiles dialed weekly, never on autopilot.</p>
+          </li>
+          <li class="process-step reveal" data-delay="2">
+            <span class="process-num" aria-hidden="true">03</span>
+            <h3 class="process-title">Brew</h3>
+            <p class="process-body">V60, espresso, or slow bar — water, dose, and time measured to the gram and second.</p>
+          </li>
+          <li class="process-step reveal" data-delay="3">
+            <span class="process-num" aria-hidden="true">04</span>
+            <h3 class="process-title">Serve</h3>
+            <p class="process-body">Ceremony without the pretension. Good coffee, better company.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== STATS ===================== -->
+    <section class="stats" id="stats" aria-label="VEILLEMM in numbers">
+      <div class="container stats-grid">
+        <div class="stat reveal">
+          <span class="stat-value"><span class="counter" data-count="24">0</span></span>
+          <span class="stat-label">single origins sourced</span>
+        </div>
+        <div class="stat reveal" data-delay="1">
+          <span class="stat-value"><span class="counter" data-count="1200" data-suffix="+">0</span></span>
+          <span class="stat-label">cups poured monthly</span>
+        </div>
+        <div class="stat reveal" data-delay="2">
+          <span class="stat-value"><span class="counter" data-count="4.9" data-decimals="1">0</span><span class="stat-star">★</span></span>
+          <span class="stat-label">average rating</span>
+        </div>
+        <div class="stat reveal" data-delay="3">
+          <span class="stat-value"><span class="counter" data-count="100" data-suffix="%">0</span></span>
+          <span class="stat-label">traceable beans</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section class="section stories" id="stories">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Regulars — 04</p>
+          <h2 class="section-title">The corner table <em class="italic-marker">talks.</em></h2>
+        </div>
+
+        <div class="testimonials">
+          <figure class="testimonial testimonial--tall reveal">
+            <span class="quote-mark" aria-hidden="true">“</span>
+            <blockquote>The Matcha Cloud is dangerously good. I moved my entire work-from-home setup to a corner table — wifi's fast and nobody bothers you before noon.</blockquote>
+            <figcaption>
+              <span class="quote-avatar" aria-hidden="true">AS</span>
+              <span class="quote-name">Aira S.</span>
+              <span class="quote-role">Product Designer</span>
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial reveal" data-delay="1">
+            <span class="quote-mark" aria-hidden="true">“</span>
+            <blockquote>First roastery where the espresso tastes exactly like the tasting notes say. Scary precision — I've never had a cup this consistent.</blockquote>
+            <figcaption>
+              <span class="quote-avatar" aria-hidden="true">MD</span>
+              <span class="quote-name">Marco D.</span>
+              <span class="quote-role">Barista &amp; coffee blogger</span>
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial testimonial--offset reveal" data-delay="2">
+            <span class="quote-mark" aria-hidden="true">“</span>
+            <blockquote>Cyrus treats coffee like code — iterative, measurable, never rushed. Twice a week, religiously, and it's the best part of my calendar.</blockquote>
+            <figcaption>
+              <span class="quote-avatar" aria-hidden="true">LT</span>
+              <span class="quote-name">Lianne T.</span>
+              <span class="quote-role">Startup founder</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FOUNDER ===================== -->
+    <section class="section founder" id="founder">
+      <div class="container founder-grid">
+        <div class="founder-visual reveal">
+          <div class="founder-card" aria-hidden="true">
+            <span class="founder-card-top">VEILLEMM // ROAST LOG</span>
+            <span class="founder-card-lines">
+              <span></span><span></span><span></span><span></span>
+            </span>
+            <span class="founder-card-bottom">
+              <span class="founder-card-dot"></span>
+              batch #<span id="batchNo">042</span> · verified
+            </span>
+            <span class="founder-seal">CV</span>
+          </div>
+          <span class="founder-steam" aria-hidden="true"></span>
+        </div>
+
+        <div class="founder-body">
+          <p class="eyebrow reveal">The founder — 05</p>
+          <h2 class="section-title reveal">Built by <em class="italic-marker">Cyrus Vergara.</em></h2>
+          <p class="reveal" data-delay="1">
+            Developer by day, roaster by dawn. Cyrus built VEILLEMM's roastery, its
+            systems, and this very website — proof that the same hands that ship
+            software can also brew your best cup.
+          </p>
+          <p class="reveal" data-delay="2">
+            The same precision, craft, and obsession are available for your next
+            project — freelance builds, coffee consulting, or a collaboration
+            between the two.
+          </p>
+          <div class="founder-actions reveal" data-delay="3">
+            <a class="btn btn-primary btn-magnetic" href="mailto:veillemm1089@gmail.com?subject=Hire%20Cyrus%20—%20Project%20Inquiry" target="_blank" rel="noopener">Hire me</a>
+            <a class="btn btn-outline btn-magnetic" href="https://veillemm.netlify.app/" target="_blank" rel="noopener">View portfolio <span class="arrow" aria-hidden="true">↗</span></a>
+            <a class="btn btn-text btn-magnetic" href="mailto:veillemm1089@gmail.com">Contact me</a>
+          </div>
+          <ul class="founder-meta reveal" data-delay="4">
+            <li><a href="mailto:veillemm1089@gmail.com">veillemm1089@gmail.com</a></li>
+            <li><a href="tel:+639935584785">0993 558 4785</a></li>
+            <li><a href="https://veillemm.netlify.app/" target="_blank" rel="noopener">veillemm.netlify.app</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="section faq-section" id="faq">
+      <div class="container faq-grid">
+        <div class="faq-head">
+          <p class="eyebrow reveal">Good to know — 06</p>
+          <h2 class="section-title reveal">Questions,<br />answered <em class="italic-marker">plainly.</em></h2>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary>Do you ship beans nationwide?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <p>Yes. Beans ship within 24 hours of roasting in sealed, one-way valve bags. Free shipping on orders over ₱1,200 — roast date printed right on the bag.</p>
+          </details>
+          <details class="faq-item reveal" data-delay="1">
+            <summary>Where is the café located?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <p>We run as a slow-bar roastery with a rotating guest table program. The exact location and calendar are shared when you book — message us and we'll send the details.</p>
+          </details>
+          <details class="faq-item reveal" data-delay="2">
+            <summary>Do you have non-dairy options?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <p>Oat, soy, and lactose-free are always available at no extra charge. The Matcha Cloud and Slow Bar are built around oat by default.</p>
+          </details>
+          <details class="faq-item reveal" data-delay="3">
+            <summary>Can I work or study here?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <p>Quiet hours run 9–11 AM — plenty of power outlets, fast wifi, and nobody rushing your table. It's the corner we designed for exactly that.</p>
+          </details>
+          <details class="faq-item reveal" data-delay="4">
+            <summary>Can you brew for my event?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <p>Yes — we bring the slow bar to private events, launches, and team offsites. Send the date and headcount through the form and we'll build a menu around it.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== VISIT / CONTACT ===================== -->
+    <section class="section visit" id="visit">
+      <div class="container visit-grid">
+        <div class="visit-copy">
+          <p class="eyebrow reveal">Reserve — 07</p>
+          <h2 class="section-title reveal">Reserve a table,<br />or just <em class="italic-marker">say hi.</em></h2>
+          <p class="reveal" data-delay="1">
+            Tell us when you're coming — or what you're building. We reply within a day,
+            usually faster. The form opens your email app, addressed straight to Cyrus.
+          </p>
+
+          <dl class="visit-details reveal" data-delay="2">
+            <div class="visit-detail">
+              <dt>Email</dt>
+              <dd><a href="mailto:veillemm1089@gmail.com">veillemm1089@gmail.com</a></dd>
+            </div>
+            <div class="visit-detail">
+              <dt>Phone</dt>
+              <dd><a href="tel:+639935584785">0993 558 4785</a></dd>
+            </div>
+            <div class="visit-detail">
+              <dt>Portfolio</dt>
+              <dd><a href="https://veillemm.netlify.app/" target="_blank" rel="noopener">veillemm.netlify.app ↗</a></dd>
+            </div>
+            <div class="visit-detail">
+              <dt>Hours</dt>
+              <dd>Mon – Sat · 7:00 – 19:00<br /><span class="muted">Sun closed — roasting day</span></dd>
+            </div>
+          </dl>
+        </div>
+
+        <form class="reserve-form reveal" data-delay="2" id="reserveForm" novalidate>
+          <div class="form-row">
+            <label for="fName">Name</label>
+            <input type="text" id="fName" name="name" placeholder="Your name" required autocomplete="name" />
+          </div>
+          <div class="form-row">
+            <label for="fEmail">Email</label>
+            <input type="email" id="fEmail" name="email" placeholder="you@example.com" required autocomplete="email" />
+          </div>
+          <div class="form-row">
+            <label for="fType">What's this about?</label>
+            <div class="select-wrap">
+              <select id="fType" name="type">
+                <option>Reserve a table</option>
+                <option>Order beans</option>
+                <option>Event / slow bar</option>
+                <option>Hire Cyrus for a project</option>
+                <option>Just saying hi</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="fMessage">Message</label>
+            <textarea id="fMessage" name="message" rows="4" placeholder="Date, party size, questions…" required></textarea>
+          </div>
+          <button class="btn btn-primary btn-block btn-magnetic" type="submit">
+            Send reservation <span class="arrow" aria-hidden="true">→</span>
+          </button>
+          <p class="form-hint" id="formHint">Opens your email app — we'll take it from there.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#top" aria-label="VEILLEMM — back to top">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" width="30" height="30">
+              <circle cx="32" cy="32" r="30" fill="currentColor" />
+              <path d="M20 42 L32 20 L44 42 Z" fill="var(--paper)" />
+              <circle cx="32" cy="20" r="5" fill="var(--copper)" />
+            </svg>
+          </span>
+          <span class="brand-name">VEILLEMM<sup>®</sup></span>
+        </a>
+        <p class="footer-tagline">Slow brews for fast minds.<br />A specialty roastery by Cyrus Vergara.</p>
+      </div>
+
+      <nav class="footer-col" aria-label="Footer">
+        <h3 class="footer-heading">Explore</h3>
+        <ul>
+          <li><a href="#ritual">Ritual</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#brew">Brew</a></li>
+          <li><a href="#stories">Stories</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h3 class="footer-heading">Connect</h3>
+        <ul>
+          <li><a href="mailto:veillemm1089@gmail.com">veillemm1089@gmail.com</a></li>
+          <li><a href="tel:+639935584785">0993 558 4785</a></li>
+          <li><a href="https://veillemm.netlify.app/" target="_blank" rel="noopener">Portfolio ↗</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col--hours">
+        <h3 class="footer-heading">Hours</h3>
+        <ul>
+          <li>Mon – Sat · 7:00 – 19:00</li>
+          <li class="muted">Sun closed — roasting day</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> VEILLEMM. All rights reserved.</p>
+      <p class="footer-made">Crafted with <span aria-hidden="true">☕</span> by <a href="https://veillemm.netlify.app/" target="_blank" rel="noopener">Cyrus Vergara</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
