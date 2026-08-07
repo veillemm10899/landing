@@ -145,7 +145,7 @@ function cardMarkup(p, i) {
           <div class="mockup__frame">
             <div class="mockup__bar">
               <span class="mockup__dots" aria-hidden="true"><i></i><i></i><i></i></span>
-              <span class="mockup__url">veillemm.netlify.app/${p.folder}</span>
+              <span class="mockup__url">~/samples/${p.folder}/</span>
             </div>
             <div class="mockup__art" style="--c1:${p.c1};--c2:${p.c2};">
               <span class="mockup__initial" style="color:${ink}" aria-hidden="true">${p.title.charAt(0)}</span>
@@ -162,7 +162,7 @@ function cardMarkup(p, i) {
           </div>
           <div class="card__foot">
             <span class="card__index mono">№ ${String(i + 1).padStart(2, "0")}</span>
-            <span class="card__visit">Visit <span class="arrow" aria-hidden="true">↗</span></span>
+            <span class="card__visit"><span class="mono" aria-hidden="true">▸</span> open <span class="arrow" aria-hidden="true">↗</span></span>
           </div>
         </div>
       </a>
@@ -189,6 +189,97 @@ $("#search-input").addEventListener("input", (e) => {
         `${p.title} ${p.tagline} ${p.tag}`.toLowerCase().includes(q)
       );
   render(list);
+});
+
+/* Press "/" anywhere to jump into the search — like Vim, but for browsing. */
+document.addEventListener("keydown", (e) => {
+  if (e.key !== "/" || e.ctrlKey || e.metaKey || e.altKey) return;
+  const t = document.activeElement;
+  if (t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA" || t.isContentEditable)) return;
+  e.preventDefault();
+  $("#search-input").focus();
+});
+
+/* ============================================================
+   HERO TERMINAL — types out a small script on a loop
+   ============================================================ */
+const TERMINAL_SCRIPT = [
+  { cmd: "whoami", out: "cyrus@veillemm — full-stack developer" },
+  { cmd: "ls ./samples", out: "residences/  market/  studio/  music/  coffee/" },
+  { cmd: "cat ./stack.json", out: '{ "html5": true, "css3": true, "js": true, "webgl": true }' },
+  { cmd: "npx deploy --all", out: "✔ 13 landing pages deployed" }
+];
+
+(function initTerminal() {
+  const body = $("#terminal");
+  if (!body) return;
+  const PROMPT = '<span class="t-prompt">➜</span> <span class="t-path">~/samples</span> ';
+  const cursorLine = () =>
+    `<p class="t-line">${PROMPT}<span class="t-cursor" aria-hidden="true"></span></p>`;
+
+  if (REDUCED_MOTION) {
+    body.innerHTML =
+      TERMINAL_SCRIPT.map(
+        (l) =>
+          `<p class="t-line">${PROMPT}<span class="t-cmd">${l.cmd}</span></p>` +
+          `<p class="t-out">${l.out}</p>`
+      ).join("") + cursorLine();
+    return;
+  }
+
+  body.innerHTML = cursorLine();
+  let i = 0, c = 0, phase = 0; // 0 = typing, 1 = hold, 2 = show output
+  const tick = () => {
+    const last = body.querySelector("p:last-child");
+    if (phase === 0) {
+      if (c < TERMINAL_SCRIPT[i].cmd.length) {
+        const cmd = last.querySelector(".t-cmd");
+        if (cmd) cmd.textContent = TERMINAL_SCRIPT[i].cmd.slice(0, c + 1);
+        else last.querySelector(".t-cursor").insertAdjacentHTML("beforebegin", `<span class="t-cmd">${TERMINAL_SCRIPT[i].cmd[0]}</span>`);
+        c++;
+        setTimeout(tick, 42 + Math.random() * 70);
+      } else {
+        phase = 1;
+        setTimeout(tick, 420);
+      }
+    } else if (phase === 1) {
+      last.insertAdjacentHTML(
+        "afterend",
+        `<p class="t-out">${TERMINAL_SCRIPT[i].out}</p>` + cursorLine()
+      );
+      phase = 2;
+      setTimeout(tick, 1500);
+    } else {
+      while (body.children.length > 6) body.firstElementChild.remove();
+      i = (i + 1) % TERMINAL_SCRIPT.length;
+      c = 0;
+      phase = 0;
+      setTimeout(tick, 300);
+    }
+  };
+  tick();
+})();
+
+/* ============================================================
+   THEME TOGGLE — light / dark, remembered in localStorage
+   ============================================================ */
+const themeToggle = $("#theme-toggle");
+const THEME_META = document.querySelector('meta[name="theme-color"]');
+
+function applyTheme(dark) {
+  const root = document.documentElement;
+  root.setAttribute("data-theme", dark ? "dark" : "light");
+  themeToggle.setAttribute("aria-pressed", String(dark));
+  themeToggle.setAttribute("aria-label", dark ? "Switch to light mode" : "Switch to dark mode");
+  if (THEME_META) THEME_META.setAttribute("content", dark ? "#0E0E15" : "#F5F3EE");
+}
+
+applyTheme(document.documentElement.getAttribute("data-theme") === "dark");
+
+themeToggle.addEventListener("click", () => {
+  const dark = document.documentElement.getAttribute("data-theme") !== "dark";
+  applyTheme(dark);
+  try { localStorage.setItem("veillemm-theme", dark ? "dark" : "light"); } catch (e) {}
 });
 
 /* ============================================================
