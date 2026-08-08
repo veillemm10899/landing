@@ -22,6 +22,13 @@ const REDUCED_MOTION = window.matchMedia("(prefers-reduced-motion: reduce)").mat
 
 const PROJECTS = [
   {
+    title: "SEE — The Art of the Golden Hour",
+    folder: "See",
+    tag: "Travel",
+    tagline: "Where the sky falls in love with the sea — sunsets, beaches & paradise.",
+    c1: "#06080F", c2: "#F4B860", concept: false
+  },
+  {
     title: "VEILLEMM — Modern Residences",
     folder: "veillemm-residences",
     tag: "Real Estate",
@@ -207,7 +214,7 @@ const TERMINAL_SCRIPT = [
   { cmd: "whoami", out: "cyrus@veillemm — full-stack developer" },
   { cmd: "ls ./samples", out: "residences/  market/  studio/  music/  coffee/" },
   { cmd: "cat ./stack.json", out: '{ "html5": true, "css3": true, "js": true, "webgl": true }' },
-  { cmd: "npx deploy --all", out: "✔ 13 landing pages deployed" }
+  { cmd: "npx deploy --all", out: "✔ 14 landing pages deployed" }
 ];
 
 (function initTerminal() {

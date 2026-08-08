@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SEE — The Art of the Golden Hour</title>
+  <meta name="description" content="SEE is a cinematic travel experience by VEILLEMM — a collection of the world's most beautiful sunset views, beaches, and paradise escapes, captured in the golden hour." />
+  <meta name="keywords" content="sunsets, beaches, paradise, golden hour, travel, VEILLEMM, Philippines, Maldives, Boracay, Palawan" />
+  <meta name="author" content="VEILLEMM — Cyrus Vergara" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="SEE — The Art of the Golden Hour" />
+  <meta property="og:description" content="Where the sky falls in love with the sea. A cinematic collection of sunsets, beaches and paradise by VEILLEMM." />
+  <meta property="og:image" content="assets/images/hero-beach-sunset.jpg" />
+  <meta name="theme-color" content="#06080f" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%2306080f'/%3E%3Ccircle cx='32' cy='32' r='16' fill='%23f4b860'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400;1,9..144,500&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <!-- ============ PRELOADER ============ -->
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <span class="preloader__word">SEE<span class="preloader__dot">.</span></span>
+      <div class="preloader__bar"><span class="preloader__bar-fill"></span></div>
+      <span class="preloader__tag">waiting for the golden hour</span>
+    </div>
+  </div>
+
+  <!-- ============ CUSTOM CURSOR ============ -->
+  <div class="cursor" aria-hidden="true">
+    <span class="cursor__dot"></span>
+    <span class="cursor__ring"></span>
+  </div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a class="nav__wordmark" href="#top">SEE<span class="nav__dot">.</span></a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#sunset">Sunset</a>
+      <a href="#gallery">Destinations</a>
+      <a href="#beach">Beach</a>
+      <a href="#paradise">Paradise</a>
+    </nav>
+    <div class="nav__actions">
+      <a class="nav__cta magnetic" href="mailto:veillemm1089@gmail.com?subject=Hire%20Me%20—%20SEE%20Experience">Hire Me</a>
+      <button class="nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-overlay" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile menu overlay -->
+  <div class="nav-overlay" id="nav-overlay" aria-hidden="true">
+    <nav class="nav-overlay__links" aria-label="Mobile">
+      <a href="#sunset">Sunset</a>
+      <a href="#gallery">Destinations</a>
+      <a href="#beach">Beach</a>
+      <a href="#paradise">Paradise</a>
+      <a class="nav-overlay__cta" href="mailto:veillemm1089@gmail.com">Hire Me</a>
+    </nav>
+  </div>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__media" data-parallax="0.18">
+        <img src="assets/images/hero-beach-sunset.jpg" alt="A palm-lined tropical beach glowing under a golden sunset sky" fetchpriority="high" />
+      </div>
+      <div class="hero__veil" aria-hidden="true"></div>
+      <span class="hero__watermark" aria-hidden="true">SEE</span>
+      <div class="hero__side" aria-hidden="true">
+        <span>15.87°N</span><span class="hero__side-line"></span><span>120.31°E</span>
+      </div>
+
+      <div class="hero__content">
+        <p class="kicker" data-reveal>VEILLEMM presents — a golden hour experience</p>
+        <h1 class="hero__title" data-reveal data-delay="1">
+          Where the sky falls<br />
+          in love with <em class="sun-text">the sea.</em>
+        </h1>
+        <p class="hero__sub" data-reveal data-delay="2">
+          SEE is a collection of the world's most beautiful sunsets, beaches and
+          paradise escapes — captured in that single perfect hour when the world
+          turns to gold.
+        </p>
+        <div class="hero__actions" data-reveal data-delay="3">
+          <a class="btn btn--primary magnetic" href="#gallery">Explore the golden hour</a>
+          <a class="btn btn--ghost magnetic" href="#sunset">Start at dusk</a>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#sunset" aria-label="Scroll down">
+        <span>scroll</span>
+        <span class="hero__scroll-line" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Sunsets</span><i>✦</i><span>Golden Hour</span><i>✦</i><span>Beaches</span><i>✦</i><span>Tropical Nights</span><i>✦</i><span>Paradise</span><i>✦</i>
+        <span>Sunsets</span><i>✦</i><span>Golden Hour</span><i>✦</i><span>Beaches</span><i>✦</i><span>Tropical Nights</span><i>✦</i><span>Paradise</span><i>✦</i>
+        <span>Sunsets</span><i>✦</i><span>Golden Hour</span><i>✦</i><span>Beaches</span><i>✦</i><span>Tropical Nights</span><i>✦</i><span>Paradise</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ============ CHAPTER 01 — THE SUNSET ============ -->
+    <section class="chapter" id="sunset">
+      <div class="chapter__media" data-parallax="0.14">
+        <img src="assets/images/sunset-ocean.jpg" alt="The sun dissolving into a warm ocean horizon at dusk" loading="lazy" />
+      </div>
+      <div class="chapter__veil" aria-hidden="true"></div>
+      <div class="chapter__card glass" data-reveal="left">
+        <p class="kicker">01 — The Sunset</p>
+        <h2 class="chapter__title">The sky performs<br /><em class="sun-text">every single day.</em></h2>
+        <p class="chapter__text">
+          No ticket. No queue. Just show up before the light turns amber.
+          For those few minutes, the whole world slows down and agrees
+          on one thing — this is enough.
+        </p>
+        <ul class="chapter__meta">
+          <li><strong>6:47 PM</strong><span>perfect start</span></li>
+          <li><strong>12 min</strong><span>the performance</span></li>
+          <li><strong>∞</strong><span>encores</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ DESTINATIONS ============ -->
+    <section class="destinations" id="gallery">
+      <div class="section-head container">
+        <div data-reveal>
+          <p class="kicker">02 — Destinations</p>
+          <h2 class="section-title">Eight horizons<br />worth <em class="sun-text">chasing.</em></h2>
+        </div>
+        <p class="section-head__note" data-reveal data-delay="1">Tap any frame to step inside.<br class="br-mobile" /> Every image opens in full screen.</p>
+      </div>
+
+      <div class="dest-grid container">
+        <figure class="dest-item d1" data-reveal data-delay="0" data-lightbox data-caption="Maldives — Where the lagoon holds the light">
+          <img src="assets/images/beach-turquoise.jpg" alt="Turquoise Maldives lagoon meeting a bright tropical sky" loading="lazy" />
+          <figcaption>
+            <span class="dest-item__coords">4.2°N · 73.2°E</span>
+            <span class="dest-item__name">Maldives</span>
+            <span class="dest-item__tag">Lagoon that holds the light</span>
+          </figcaption>
+        </figure>
+
+        <figure class="dest-item d2" data-reveal data-delay="1" data-lightbox data-caption="Palawan, Philippines — Cliffs that drink the sunset">
+          <img src="assets/images/beach-waves.jpg" alt="Waves curling against the shore in Palawan at golden hour" loading="lazy" />
+          <figcaption>
+            <span class="dest-item__coords">10.2°N · 119.2°E</span>
+            <span class="dest-item__name">Palawan</span>
+            <span class="dest-item__tag">Cliffs that drink the sunset</span>
+          </figcaption>
+        </figure>
+
+        <figure class="dest-item d3" data-reveal data-delay="2" data-lightbox data-caption="Bali, Indonesia — Rice fields painted gold">
+          <img src="assets/images/sunset-field.jpg" alt="A lone tree over an Indonesian field in warm dusk light" loading="lazy" />
+          <figcaption>
+            <span class="dest-item__coords">8.4°S · 115.2°E</span>
+            <span class="dest-item__name">Bali</span>
+            <span class="dest-item__tag">Rice fields painted gold</span>
+          </figcaption>
+        </figure>
+
+        <figure class="dest-item d4" data-reveal data-delay="3" data-lightbox data-caption="El Nido, Philippines — Boats home by golden hour">
+          <img src="assets/images/beach-boat.jpg" alt="A wooden outrigger boat floating on calm water at sunset" loading="lazy" />
+          <figcaption>
+            <span class="dest-item__coords">11.2°N · 119.4°E</span>
+            <span class="dest-item__name">El Nido</span>
+            <span class="dest-item__tag">Boats home by golden hour</span>
+          </figcaption>
+        </figure>
+
+        <figure class="dest-item d5" data-reveal data-delay="1" data-lightbox data-caption="Santorini, Greece — Blue houses, amber skies">
+          <img src="assets/images/sunset-sky.jpg" alt="Santorini rooftops and sea bathed in a warm evening glow" loading="lazy" />
+          <figcaption>
+            <span class="dest-item__coords">36.4°N · 25.4°E</span>
+            <span class="dest-item__name">Santorini</span>
+            <span class="dest-item__tag">Blue houses, amber skies</span>
+          </figcaption>
+        </figure>
+
+        <figure class="dest-item d6" data-reveal data-delay="2" data-lightbox data-caption="Boracay, Philippines — White sand, gold light">
+          <img src="assets/images/beach-aerial.jpg" alt="Aerial view of a turquoise beach cove curving into the sea" loading="lazy" />
+          <figcaption>
+            <span class="dest-item__coords">11.9°N · 121.9°E</span>
+            <span class="dest-item__name">Boracay</span>
+            <span class="dest-item__tag">White sand, gold light</span>
+          </figcaption>
+        </figure>
+
+        <figure class="dest-item d7" data-reveal data-delay="3" data-lightbox data-caption="Seychelles — Two chairs, one horizon">
+          <img src="assets/images/beach-chairs.jpg" alt="Two beach chairs on pristine sand facing the ocean" loading="lazy" />
+          <figcaption>
+            <span class="dest-item__coords">4.6°S · 55.4°E</span>
+            <span class="dest-item__name">Seychelles</span>
+            <span class="dest-item__tag">Two chairs, one horizon</span>
+          </figcaption>
+        </figure>
+
+        <figure class="dest-item d8" data-reveal data-delay="4" data-lightbox data-caption="Lisbon, Portugal — A city that blushes at dusk">
+          <img src="assets/images/city-sunset.jpg" alt="A city skyline and river glowing orange at sunset" loading="lazy" />
+          <figcaption>
+            <span class="dest-item__coords">38.7°N · 9.1°W</span>
+            <span class="dest-item__name">Lisbon</span>
+            <span class="dest-item__tag">A city that blushes at dusk</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ CHAPTER 02 — THE BEACH ============ -->
+    <section class="beach" id="beach">
+      <div class="beach__head container">
+        <div data-reveal>
+          <p class="kicker">03 — The Beach</p>
+          <h2 class="section-title">Shore things.</h2>
+        </div>
+        <div class="beach__nav" data-reveal data-delay="1">
+          <button class="beach__arrow magnetic" id="strip-prev" aria-label="Scroll beach gallery backwards">←</button>
+          <button class="beach__arrow magnetic" id="strip-next" aria-label="Scroll beach gallery forwards">→</button>
+        </div>
+      </div>
+
+      <div class="strip" id="strip" tabindex="0" aria-label="Beach gallery — drag or use arrows">
+        <figure class="strip-card" data-lightbox data-caption="Aerial — Into the blue">
+          <img src="assets/images/beach-aerial-2.jpg" alt="Aerial shot of turquoise water along a sandy coast" loading="lazy" />
+          <figcaption><span>Aerial</span><em>Into the blue</em></figcaption>
+        </figure>
+        <figure class="strip-card" data-lightbox data-caption="Resort — Infinity dusk">
+          <img src="assets/images/resort-pool.jpg" alt="A resort pool glowing at the edge of dusk" loading="lazy" />
+          <figcaption><span>Resort</span><em>Infinity dusk</em></figcaption>
+        </figure>
+        <figure class="strip-card" data-lightbox data-caption="Ocean — Quiet gold">
+          <img src="assets/images/ocean-calm.jpg" alt="Calm ocean water shimmering with golden sunset light" loading="lazy" />
+          <figcaption><span>Ocean</span><em>Quiet gold</em></figcaption>
+        </figure>
+        <figure class="strip-card" data-lightbox data-caption="Skyline — City light">
+          <img src="assets/images/bridge-sunset.jpg" alt="A famous bridge silhouetted against a glowing sunset" loading="lazy" />
+          <figcaption><span>Skyline</span><em>City light</em></figcaption>
+        </figure>
+        <figure class="strip-card" data-lightbox data-caption="Shore — Last light">
+          <img src="assets/images/resort-beach.jpg" alt="Empty shoreline at the very last light of day" loading="lazy" />
+          <figcaption><span>Shore</span><em>Last light</em></figcaption>
+        </figure>
+        <figure class="strip-card" data-lightbox data-caption="Sky — Birds of the hour">
+          <img src="assets/images/sunset-beach-birds.jpg" alt="Birds flying across a dramatic orange sunset sky" loading="lazy" />
+          <figcaption><span>Sky</span><em>Birds of the hour</em></figcaption>
+        </figure>
+        <figure class="strip-card" data-lightbox data-caption="Waves — The finale">
+          <img src="assets/images/waves-crash.jpg" alt="A wave crashing and glowing amber in the evening sun" loading="lazy" />
+          <figcaption><span>Waves</span><em>The finale</em></figcaption>
+        </figure>
+        <figure class="strip-card" data-lightbox data-caption="Dunes — Silhouettes of the hour">
+          <img src="assets/images/sunset-silhouette.jpg" alt="Silhouettes on a dune against a burning orange sunset" loading="lazy" />
+          <figcaption><span>Dunes</span><em>Silhouettes of the hour</em></figcaption>
+        </figure>
+        <figure class="strip-card" data-lightbox data-caption="Currents — Blue highways of the sea">
+          <img src="assets/images/ocean-aerial.jpg" alt="Aerial view of ocean currents weaving through turquoise water" loading="lazy" />
+          <figcaption><span>Currents</span><em>Blue highways</em></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ CHAPTER 03 — PARADISE ============ -->
+    <section class="paradise" id="paradise">
+      <div class="paradise__media" data-parallax="0.16">
+        <img src="assets/images/ocean-sunset-2.jpg" alt="Endless ocean melting into a hazy golden sunset" loading="lazy" />
+      </div>
+      <div class="paradise__veil" aria-hidden="true"></div>
+      <div class="paradise__inner" data-reveal="scale">
+        <p class="kicker kicker--center">04 — Paradise</p>
+        <blockquote class="paradise__quote">
+          “Some places don't need describing.<br />
+          <em class="sun-text">They need seeing.”</em>
+        </blockquote>
+        <p class="paradise__text">Turn off the notifications. Follow the light west. The beach will still be there.</p>
+        <a class="btn btn--primary magnetic" href="#contact">Plan your escape</a>
+      </div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="stats container">
+      <div class="stat" data-reveal>
+        <span class="stat__num" data-count="20">0</span><span class="stat__plus">+</span>
+        <span class="stat__label">destinations captured</span>
+      </div>
+      <div class="stat" data-reveal data-delay="1">
+        <span class="stat__num" data-count="12">0</span><span class="stat__plus">min</span>
+        <span class="stat__label">of perfect light, daily</span>
+      </div>
+      <div class="stat" data-reveal data-delay="2">
+        <span class="stat__num" data-count="360">0</span><span class="stat__plus">°</span>
+        <span class="stat__label">of horizon to lose yourself in</span>
+      </div>
+      <div class="stat" data-reveal data-delay="3">
+        <span class="stat__num">∞</span>
+        <span class="stat__label">sunsets, still counting</span>
+      </div>
+    </section>
+
+    <!-- ============ CTA / CONTACT ============ -->
+    <section class="cta" id="contact">
+      <div class="cta__glow" aria-hidden="true"></div>
+      <p class="kicker kicker--center" data-reveal>Made by VEILLEMM — Cyrus Vergara</p>
+      <h2 class="cta__title" data-reveal data-delay="1">See it<br /><em class="sun-text">for yourself.</em></h2>
+      <p class="cta__text" data-reveal data-delay="2">
+        Want a digital experience this beautiful? That's what VEILLEMM builds.
+        One golden-hour masterpiece at a time.
+      </p>
+      <div class="cta__actions" data-reveal data-delay="3">
+        <a class="btn btn--primary magnetic" href="mailto:veillemm1089@gmail.com?subject=Hire%20Me%20—%20I%20want%20a%20golden-hour%20website">Hire Me</a>
+        <a class="btn btn--ghost magnetic" href="https://veillemm.netlify.app/" target="_blank" rel="noopener">View Portfolio</a>
+        <a class="btn btn--ghost magnetic" href="mailto:veillemm1089@gmail.com">Contact Me</a>
+      </div>
+      <div class="cta__links" data-reveal data-delay="4">
+        <a href="mailto:veillemm1089@gmail.com">veillemm1089@gmail.com</a>
+        <span aria-hidden="true">·</span>
+        <a href="tel:+639935584785">0993 558 4785</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__top container">
+      <a class="footer__wordmark" href="#top">SEE<span class="nav__dot">.</span></a>
+      <p class="footer__tag">The art of the golden hour —<br />curated by VEILLEMM.</p>
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="#sunset">Sunset</a>
+        <a href="#gallery">Destinations</a>
+        <a href="#beach">Beach</a>
+        <a href="#paradise">Paradise</a>
+        <a href="#contact">Hire Me</a>
+      </nav>
+    </div>
+    <div class="footer__bottom container">
+      <span>© 2026 VEILLEMM — Crafted by <a href="https://veillemm.netlify.app/" target="_blank" rel="noopener">Cyrus Vergara</a></span>
+      <span>Photography via <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></span>
+    </div>
+  </footer>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+    <button class="lightbox__close" id="lb-close" aria-label="Close image viewer">✕</button>
+    <button class="lightbox__arrow lightbox__arrow--prev" id="lb-prev" aria-label="Previous image">←</button>
+    <figure class="lightbox__stage">
+      <img id="lb-img" src="" alt="" />
+      <figcaption id="lb-caption"></figcaption>
+    </figure>
+    <button class="lightbox__arrow lightbox__arrow--next" id="lb-next" aria-label="Next image">→</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -24,67 +24,72 @@ Each sample is self-contained in its own folder and opens with a single click.
 
 ## 🖼️ The Samples
 
-### 1 · VEILLEMM — Modern Residences
+### 1 · SEE — The Art of the Golden Hour
+> Travel · *Where the sky falls in love with the sea — sunsets, beaches & paradise.*
+
+[![SEE — The Art of the Golden Hour](assets/thumbs/See.jpg)](See/index.html)
+
+### 2 · VEILLEMM — Modern Residences
 > Real Estate · *Engineered with intent, designed around how you live.*
 
 [![VEILLEMM — Modern Residences](assets/thumbs/veillemm-residences.jpg)](veillemm-residences/index.html)
 
-### 2 · VEILLEMM Market
+### 3 · VEILLEMM Market
 > E-Commerce · *Everyday fresh, delivered right.*
 
 [![VEILLEMM Market](assets/thumbs/veillemm-market.jpg)](veillemm-market/index.html)
 
-### 3 · The Danger of AI — Human Firewall
+### 4 · The Danger of AI — Human Firewall
 > Editorial · *A threat dossier on the last invention.*
 
 [![The Danger of AI](assets/thumbs/ai-human-firewall.jpg)](ai-human-firewall/index.html)
 
-### 4 · VEILLEMM — Digital Product Studio
+### 5 · VEILLEMM — Digital Product Studio
 > Portfolio · *Studio-grade. Independently built.*
 
 [![VEILLEMM Digital Product Studio](assets/thumbs/veillemm-studio.jpg)](veillemm-studio/index.html)
 
-### 5 · Cinematic Web for Music & Culture
+### 6 · Cinematic Web for Music & Culture
 > Portfolio · *Sites with a pulse — for artists, labels & festivals.*
 
 [![Cinematic Web for Music & Culture](assets/thumbs/veillemm-music.jpg)](veillemm-music/index.html)
 
-### 6 · VEILLEMM Coffee Roasters
+### 7 · VEILLEMM Coffee Roasters
 > E-Commerce · *Slow brews for fast minds — a specialty roastery.*
 
 [![VEILLEMM Coffee Roasters](assets/thumbs/veillemm-coffee.jpg)](veillemm-coffee/index.html)
 
-### 7 · VEILLEMM — Games Built Like Machines
+### 8 · VEILLEMM — Games Built Like Machines
 > Games · *Arcade-grade games. One click. No installs.*
 
 [![VEILLEMM Games](assets/thumbs/veillemm-games.jpg)](veillemm-games/index.html)
 
-### 8 · VEILLEMM WILD — Rewilding Studio
+### 9 · VEILLEMM WILD — Rewilding Studio
 > Brand · *Restore the wild, verify every tree.*
 
 [![VEILLEMM WILD](assets/thumbs/veillemm-wild.jpg)](veillemm-wild/index.html)
 
-### 9 · Clarity in the Rain
+### 10 · Clarity in the Rain
 > Personal · *A developer who thinks clearest when it rains.*
 
 [![Clarity in the Rain](assets/thumbs/veillemm-rain.jpg)](veillemm-rain/index.html)
 
-### 10 · The 2026 Cyber Field Manual
+### 11 · The 2026 Cyber Field Manual
 > Editorial · *Become a cybersecurity professional in 2026.*
 
 [![The 2026 Cyber Field Manual](assets/thumbs/cyber-field-manual.jpg)](cyber-field-manual/index.html)
 
-### 11 · VEILLEMM & CO. — Fine Timepieces
+### 12 · VEILLEMM & CO. — Fine Timepieces
 > Brand · *Hand-assembled. Individually numbered.*
 
 [![VEILLEMM Fine Timepieces](assets/thumbs/veillemm-timepieces.jpg)](veillemm-timepieces/index.html)
 
-### 12 · VEILLEMM — Frequency Atelier
+### 13 · VEILLEMM — Frequency Atelier
 > Personal · *Most software is noise. I build signal.*
 
 [![VEILLEMM Frequency Atelier](assets/thumbs/veillemm-frequency.jpg)](veillemm-frequency/index.html)
 
-### 13 · MAISON DOUX — Atelier de Pâtisserie
+### 14 · MAISON DOUX — Atelier de Pâtisserie
 > Brand · *Where butter becomes architecture — a 3D WebGL experience.* **Concept**
 
 [![MAISON DOUX](assets/thumbs/maison-doux.jpg)](maison-doux/index.html)
