@@ -165,9 +165,18 @@ $$('a[href^="#"]').forEach(a => {
   const closeBtn = $("#lightboxClose");
   const prevBtn = $("#lightboxPrev");
   const nextBtn = $("#lightboxNext");
+  const lbCurrent = $("#lbCurrent");
+  const lbTotal = $("#lbTotal");
 
   const items = $$(".gallery__item");
   let currentIdx = 0;
+
+  // Set total count
+  if (lbTotal) lbTotal.textContent = items.length;
+
+  function updateCounter() {
+    if (lbCurrent) lbCurrent.textContent = currentIdx + 1;
+  }
 
   function open(idx) {
     currentIdx = idx;
@@ -177,6 +186,7 @@ $$('a[href^="#"]').forEach(a => {
     img.src = imgEl.src;
     img.alt = imgEl.alt;
     cap.textContent = capEl ? capEl.textContent : "";
+    updateCounter();
     lightbox.classList.add("is-open");
     lightbox.setAttribute("aria-hidden", "false");
     document.body.style.overflow = "hidden";
@@ -198,8 +208,10 @@ $$('a[href^="#"]').forEach(a => {
     open(currentIdx);
   }
 
+  // Touch / click on gallery items
   items.forEach((item, i) => {
     item.addEventListener("click", () => open(i));
+    item.addEventListener("touchend", (e) => { e.preventDefault(); open(i); });
     item.addEventListener("keydown", (e) => {
       if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(i); }
     });
@@ -209,8 +221,11 @@ $$('a[href^="#"]').forEach(a => {
   });
 
   closeBtn.addEventListener("click", close);
+  closeBtn.addEventListener("touchend", (e) => { e.preventDefault(); close(); });
   prevBtn.addEventListener("click", prev);
+  prevBtn.addEventListener("touchend", (e) => { e.preventDefault(); prev(); });
   nextBtn.addEventListener("click", next);
+  nextBtn.addEventListener("touchend", (e) => { e.preventDefault(); next(); });
 
   document.addEventListener("keydown", (e) => {
     if (!lightbox.classList.contains("is-open")) return;
@@ -219,10 +234,41 @@ $$('a[href^="#"]').forEach(a => {
     if (e.key === "ArrowRight") next();
   });
 
-  // Close on background click
+  // Close on background click (but not on image or buttons)
   lightbox.addEventListener("click", (e) => {
-    if (e.target === lightbox) close();
+    if (e.target === lightbox || e.target.classList.contains("lightbox__figure")) close();
   });
+
+  // Swipe support for mobile
+  let touchStartX = 0;
+  let touchStartY = 0;
+  let swiping = false;
+
+  lightbox.addEventListener("touchstart", (e) => {
+    if (!lightbox.classList.contains("is-open")) return;
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+    swiping = true;
+  }, { passive: true });
+
+  lightbox.addEventListener("touchend", (e) => {
+    if (!swiping || !lightbox.classList.contains("is-open")) return;
+    swiping = false;
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    const dy = e.changedTouches[0].clientY - touchStartY;
+    const absDx = Math.abs(dx);
+    const absDy = Math.abs(dy);
+
+    // Must swipe horizontally and more than vertically
+    if (absDx > 50 && absDx > absDy * 1.5) {
+      if (dx > 0) prev();
+      else next();
+    }
+    // Swipe down to close
+    else if (absDy > 80 && absDy > absDx * 1.5 && dy > 0) {
+      close();
+    }
+  }, { passive: true });
 })();
 
 /* ============================================================

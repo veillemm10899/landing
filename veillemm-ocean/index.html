@@ -441,13 +441,19 @@
 
 <!-- ============ LIGHTBOX ============ -->
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" aria-hidden="true">
-  <button class="lightbox__close" id="lightboxClose" aria-label="Close image viewer">✕</button>
+  <div class="lightbox__topbar">
+    <span class="lightbox__counter"><strong id="lbCurrent">1</strong> / <span id="lbTotal">8</span></span>
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close image viewer">✕</button>
+  </div>
   <button class="lightbox__prev" id="lightboxPrev" aria-label="Previous image">←</button>
   <button class="lightbox__next" id="lightboxNext" aria-label="Next image">→</button>
   <figure class="lightbox__figure">
     <img class="lightbox__img" id="lightboxImg" src="" alt="">
     <figcaption class="lightbox__cap" id="lightboxCap"></figcaption>
   </figure>
+  <div class="lightbox__bottombar">
+    <span class="lightbox__swipe-hint">tap anywhere to close</span>
+  </div>
 </div>
 
 <script src="assets/js/main.js"></script>
