@@ -118,6 +118,13 @@ const PROJECTS = [
     tag: "Brand",
     tagline: "Where butter becomes architecture — a 3D WebGL experience.",
     c1: "#2A1A12", c2: "#E3B368", concept: true
+  },
+  {
+    title: "VEILLEMM — Beauty of the Ocean",
+    folder: "veillemm-ocean",
+    tag: "Personal",
+    tagline: "Deep waters, untold stories — a cinematic ocean experience.",
+    c1: "#0a1628", c2: "#1abc9c", concept: false
   }
 ];
 

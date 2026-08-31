@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VEILLEMM — Beauty of the Ocean · Deep Waters, Untold Stories</title>
+<meta name="description" content="A cinematic journey into the beauty of the ocean — where deep waters hold untold stories. Crafted by Cyrus Vergara (@veillemm).">
+<meta name="author" content="Cyrus Vergara">
+<meta property="og:title" content="VEILLEMM — Beauty of the Ocean">
+<meta property="og:description" content="The ocean's beauty, captured in motion. A cinematic experience by Cyrus Vergara.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://veillemm.netlify.app/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M4 20c4-6 8-8 12-8s8 2 12 8' stroke='%231abc9c' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3Cpath d='M2 24c5-5 9-7 14-7s9 2 14 7' stroke='%232dd4a8' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Cpath d='M16 4v6' stroke='%23f0c040' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader__inner">
+    <div class="preloader__wave">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <p class="preloader__text">diving deep<span class="preloader__dot">.</span></p>
+  </div>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="nav__logo" href="#top" aria-label="VEILLEMM home">
+      <span class="nav__logo-icon">〰</span>veillemm<span class="nav__logo-dot">.</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#deep" class="nav__link">The Deep</a>
+      <a href="#gallery" class="nav__link">Gallery</a>
+      <a href="#currents" class="nav__link">Currents</a>
+      <a href="#craft" class="nav__link">Craft</a>
+      <a href="#contact" class="nav__link">Contact</a>
+    </nav>
+    <div class="nav__actions">
+      <a href="mailto:veillemm1089@gmail.com" class="btn btn--ghost nav__hire">Hire Me</a>
+      <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="nav__mobile" id="mobileMenu">
+    <a href="#deep" class="nav__mobile-link">The Deep</a>
+    <a href="#gallery" class="nav__mobile-link">Gallery</a>
+    <a href="#currents" class="nav__mobile-link">Currents</a>
+    <a href="#craft" class="nav__mobile-link">Craft</a>
+    <a href="#contact" class="nav__mobile-link">Contact</a>
+    <a href="mailto:veillemm1089@gmail.com" class="btn btn--primary nav__mobile-cta">Hire Me</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero__bg" aria-hidden="true">
+    <img class="hero__bg-img" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&q=80" alt="" loading="eager">
+    <div class="hero__overlay" aria-hidden="true"></div>
+  </div>
+  <canvas class="hero__particles" id="particlesCanvas" aria-hidden="true"></canvas>
+  <div class="hero__vignette" aria-hidden="true"></div>
+
+  <div class="hero__content">
+    <p class="eyebrow reveal">creative developer&nbsp;&nbsp;·&nbsp;&nbsp;<span class="eyebrow__accent">@veillemm</span></p>
+    <h1 class="hero__title">
+      <span class="hero__line reveal">The beauty of</span>
+      <span class="hero__line reveal"><em class="hero__em">the ocean.</em></span>
+    </h1>
+    <p class="hero__sub reveal">
+      I'm <strong>Cyrus Vergara</strong> — diving into the depths where light bends,
+      currents whisper, and every wave tells a story. I craft cinematic digital
+      experiences as vast and untamed as the sea itself.
+    </p>
+    <div class="hero__cta reveal">
+      <a href="#deep" class="btn btn--primary btn--magnetic">Dive In <span class="btn__icon">↓</span></a>
+      <a href="https://veillemm.netlify.app/" target="_blank" rel="noopener" class="btn btn--ghost btn--magnetic">View Portfolio <span class="btn__arrow">↗</span></a>
+    </div>
+    <div class="hero__meta reveal">
+      <span class="hero__meta-item"><span class="hero__meta-dot"></span> depth: uncharted</span>
+      <span class="hero__meta-item hero__meta-item--muted">inspired by deep · dark · vast</span>
+    </div>
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true">
+    <span class="hero__scroll-line"></span>
+    <span class="hero__scroll-text">descend into the deep</span>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>depth&nbsp;&nbsp;〰</span><span>waves&nbsp;&nbsp;〰</span><span>tides&nbsp;&nbsp;〰</span><span>currents&nbsp;&nbsp;〰</span><span>deep&nbsp;&nbsp;〰</span><span>vast&nbsp;&nbsp;〰</span>
+    <span>depth&nbsp;&nbsp;〰</span><span>waves&nbsp;&nbsp;〰</span><span>tides&nbsp;&nbsp;〰</span><span>currents&nbsp;&nbsp;〰</span><span>deep&nbsp;&nbsp;〰</span><span>vast&nbsp;&nbsp;〰</span>
+  </div>
+</div>
+
+<!-- ============ THE DEEP ============ -->
+<section class="story section" id="deep">
+  <div class="section__head reveal">
+    <p class="eyebrow">01&nbsp;&nbsp;/&nbsp;&nbsp;the story</p>
+    <h2 class="section__title">Why the ocean<br><em>pulls me under</em></h2>
+  </div>
+
+  <!-- full-width cinematic band -->
+  <figure class="story__band reveal">
+    <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1400&q=80" alt="A vast ocean horizon at sunset with deep blue and golden hues" loading="lazy">
+    <span class="story__shot-grain" aria-hidden="true"></span>
+    <span class="story__shot-shade" aria-hidden="true"></span>
+    <figcaption class="story__band-cap">
+      <span class="story__shot-tag">fig. 01</span>
+      <span class="story__shot-text">the horizon — where sky meets sea</span>
+    </figcaption>
+  </figure>
+
+  <div class="story__grid">
+    <div class="story__media reveal">
+      <figure class="story__shot story__shot--surface">
+        <img src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=800&q=80" alt="Crystal clear turquoise ocean surface with light rays penetrating the water" loading="lazy">
+        <span class="story__shot-grain" aria-hidden="true"></span>
+        <span class="story__shot-shade story__shot-shade--teal" aria-hidden="true"></span>
+        <figcaption class="story__shot-cap">
+          <span class="story__shot-tag">fig. 02</span>
+          <span class="story__shot-text">light breaks through the surface</span>
+        </figcaption>
+      </figure>
+      <figure class="story__shot story__shot--underwater">
+        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80" alt="Vibrant coral reef teeming with tropical fish in crystal clear water" loading="lazy">
+        <span class="story__shot-grain" aria-hidden="true"></span>
+        <span class="story__shot-shade" aria-hidden="true"></span>
+        <figcaption class="story__shot-cap">
+          <span class="story__shot-tag">fig. 03</span>
+          <span class="story__shot-text">coral cathedrals below</span>
+        </figcaption>
+      </figure>
+      <figure class="story__shot story__shot--wave">
+        <img src="https://images.unsplash.com/photo-1502680390548-bdbac40a9b27?w=800&q=80" alt="Powerful ocean wave curling and breaking with turquoise and white foam" loading="lazy">
+        <span class="story__shot-grain" aria-hidden="true"></span>
+        <span class="story__shot-shade" aria-hidden="true"></span>
+        <figcaption class="story__shot-cap">
+          <span class="story__shot-tag">fig. 04</span>
+          <span class="story__shot-text">the wave — power and grace</span>
+        </figcaption>
+      </figure>
+      <figure class="story__shot story__shot--deep">
+        <img src="https://images.unsplash.com/photo-1551244072-5d12893278ab?w=800&q=80" alt="Deep blue ocean depths with a lone diver descending into the abyss" loading="lazy">
+        <span class="story__shot-grain" aria-hidden="true"></span>
+        <span class="story__shot-shade" aria-hidden="true"></span>
+        <figcaption class="story__shot-cap">
+          <span class="story__shot-tag">fig. 05</span>
+          <span class="story__shot-text">descending into the unknown</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="story__text reveal">
+      <p class="story__lead">
+        The ocean doesn't ask permission. It pulls, it shifts, it swallows
+        the horizon whole — and in that surrender, I find the purest focus.
+      </p>
+      <p>
+        Beneath the surface the world goes quiet. The noise of daily life fades,
+        replaced by the hum of currents and the slow dance of light filtering
+        through salt water. Down there, every detail matters — a barnacle, a
+        ripple, a bioluminescent spark. The ocean doesn't tolerate noise, and
+        that's exactly why I build like it: with <em>intention</em>, with depth,
+        and with relentless attention to the details that make everything breathe.
+      </p>
+      <p>
+        That's the feeling I chase in everything I build: interfaces as vast
+        as the open sea, experiences as immersive as diving into the blue,
+        and work that carries the weight and wonder of the deep.
+      </p>
+
+      <div class="story__pillars">
+        <article class="pillar">
+          <span class="pillar__icon">🌊</span>
+          <h3 class="pillar__title">Depth</h3>
+          <p class="pillar__text">Surface-level work never reaches anyone. I go deep — into code, into craft, into what makes people feel.</p>
+        </article>
+        <article class="pillar">
+          <span class="pillar__icon">🧭</span>
+          <h3 class="pillar__title">Navigation</h3>
+          <p class="pillar__text">The ocean is vast, but every voyage has a destination. I chart paths through complex problems to elegant solutions.</p>
+        </article>
+        <article class="pillar">
+          <span class="pillar__icon">⚓</span>
+          <h3 class="pillar__title">Resilience</h3>
+          <p class="pillar__text">The sea is relentless. So is good software — built to endure, adapt, and perform under pressure.</p>
+        </article>
+      </div>
+
+      <blockquote class="story__quote">
+        <span class="story__quote-mark">"</span>
+        I don't build for the shallows. I build for the deep — where the
+        details glow in the dark, and every pixel carries weight.
+        <cite>— Cyrus, @veillemm</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="gallery section" id="gallery">
+  <div class="section__head section__head--row reveal">
+    <div>
+      <p class="eyebrow">02&nbsp;&nbsp;/&nbsp;&nbsp;gathered</p>
+      <h2 class="section__title">Frames from<br><em>the deep</em></h2>
+    </div>
+    <p class="gallery__intro">A curated collection of the ocean's most breathtaking moments — the same depth and drama I bring to every digital experience.</p>
+  </div>
+
+  <div class="gallery__grid">
+    <figure class="gallery__item gallery__item--wide reveal">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80" alt="Pristine tropical beach with turquoise water and golden sand" loading="lazy">
+      <figcaption class="gallery__cap"><span class="gallery__cap-num">01</span>paradise found <span class="gallery__cap-src">— Unsplash</span></figcaption>
+    </figure>
+    <figure class="gallery__item reveal">
+      <img src="https://images.unsplash.com/photo-1546026423-cc4642628d2b?w=800&q=80" alt="Jellyfish glowing with bioluminescent light in deep ocean" loading="lazy">
+      <figcaption class="gallery__cap"><span class="gallery__cap-num">02</span>bioluminescent <span class="gallery__cap-src">— Unsplash</span></figcaption>
+    </figure>
+    <figure class="gallery__item reveal">
+      <img src="https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?w=800&q=80" alt="Sea turtle gracefully swimming through crystal clear water" loading="lazy">
+      <figcaption class="gallery__cap"><span class="gallery__cap-num">03</span>ancient voyager <span class="gallery__cap-src">— Unsplash</span></figcaption>
+    </figure>
+    <figure class="gallery__item reveal">
+      <img src="https://images.unsplash.com/photo-1545671913-b89ac1b4ac10?w=800&q=80" alt="Dramatic ocean wave crashing against rocky coastline" loading="lazy">
+      <figcaption class="gallery__cap"><span class="gallery__cap-num">04</span>crashing shore <span class="gallery__cap-src">— Unsplash</span></figcaption>
+    </figure>
+    <figure class="gallery__item gallery__item--wide reveal">
+      <img src="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=1200&q=80" alt="Dramatic underwater scene with light rays penetrating deep blue ocean" loading="lazy">
+      <figcaption class="gallery__cap"><span class="gallery__cap-num">05</span>light in the abyss <span class="gallery__cap-src">— Unsplash</span></figcaption>
+    </figure>
+    <figure class="gallery__item reveal">
+      <img src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?w=800&q=80" alt="Aerial view of ocean waves creating patterns on sandy shore" loading="lazy">
+      <figcaption class="gallery__cap"><span class="gallery__cap-num">06</span>tidal patterns <span class="gallery__cap-src">— Unsplash</span></figcaption>
+    </figure>
+    <figure class="gallery__item reveal">
+      <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=800&q=80" alt="Serene ocean sunset with golden light reflecting on calm waters" loading="lazy">
+      <figcaption class="gallery__cap"><span class="gallery__cap-num">07</span>golden hour <span class="gallery__cap-src">— Unsplash</span></figcaption>
+    </figure>
+    <figure class="gallery__item reveal">
+      <img src="https://images.unsplash.com/photo-1559825481-12a05cc00344?w=800&q=80" alt="School of fish moving in formation through deep blue water" loading="lazy">
+      <figcaption class="gallery__cap"><span class="gallery__cap-num">08</span>school in motion <span class="gallery__cap-src">— Unsplash</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ CURRENTS ============ -->
+<section class="currents section" id="currents">
+  <div class="section__head reveal">
+    <p class="eyebrow">03&nbsp;&nbsp;/&nbsp;&nbsp;the currents</p>
+    <h2 class="section__title">Forces that<br><em>shape everything</em></h2>
+  </div>
+
+  <div class="currents__grid">
+    <article class="currents__card reveal">
+      <div class="currents__card-img">
+        <img src="https://images.unsplash.com/photo-1484291470158-b8f8d608850d?w=600&q=80" alt="Aerial view of a dramatic ocean coastline at sunset" loading="lazy">
+      </div>
+      <div class="currents__card-body">
+        <span class="currents__card-num">/01</span>
+        <h3 class="currents__card-title">Tidal Force</h3>
+        <p class="currents__card-text">Every project needs rhythm — a pulse that drives momentum. I design interfaces with natural flow, where each interaction feels inevitable.</p>
+      </div>
+    </article>
+    <article class="currents__card reveal">
+      <div class="currents__card-img">
+        <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=600&q=80" alt="Vast ocean horizon with dramatic cloud formations" loading="lazy">
+      </div>
+      <div class="currents__card-body">
+        <span class="currents__card-num">/02</span>
+        <h3 class="currents__card-title">Deep Current</h3>
+        <p class="currents__card-text">Underneath the surface, invisible forces keep everything moving. My architecture works the same way — clean systems, invisible but indispensable.</p>
+      </div>
+    </article>
+    <article class="currents__card reveal">
+      <div class="currents__card-img">
+        <img src="https://images.unsplash.com/photo-1509914398892-963f53e6e2f1?w=600&q=80" alt="Misty ocean shore with waves rolling over rocks" loading="lazy">
+      </div>
+      <div class="currents__card-body">
+        <span class="currents__card-num">/03</span>
+        <h3 class="currents__card-title">Surface Tension</h3>
+        <p class="currents__card-text">The finest details make the biggest difference. A pixel here, a transition there — I obsess over the surface so users never have to think twice.</p>
+      </div>
+    </article>
+    <article class="currents__card reveal">
+      <div class="currents__card-img">
+        <img src="https://images.unsplash.com/photo-1468413253725-0d5181091126?w=600&q=80" alt="Person diving into deep blue ocean water" loading="lazy">
+      </div>
+      <div class="currents__card-body">
+        <span class="currents__card-num">/04</span>
+        <h3 class="currents__card-title">Freefall</h3>
+        <p class="currents__card-text">Sometimes you have to jump. No net, no plan B — just trust in the craft. That's where the best work happens: when commitment meets courage.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ CRAFT ============ -->
+<section class="craft section" id="craft">
+  <div class="section__head reveal">
+    <p class="eyebrow">04&nbsp;&nbsp;/&nbsp;&nbsp;the craft</p>
+    <h2 class="section__title">What I<br><em>build</em></h2>
+  </div>
+
+  <div class="craft__grid">
+    <article class="craft__card reveal">
+      <span class="craft__card-icon">🕳️</span>
+      <h3 class="craft__card-title">Deep Web Experiences</h3>
+      <p class="craft__card-text">Immersive, cinematic websites that pull visitors in — fast, responsive, and built with the intensity of open water.</p>
+    </article>
+    <article class="craft__card reveal">
+      <span class="craft__card-icon">🗺️</span>
+      <h3 class="craft__card-title">Digital Navigation</h3>
+      <p class="craft__card-text">App development that charts clear paths through complex problems — intuitive, dependable, and built to endure.</p>
+    </article>
+    <article class="craft__card reveal">
+      <span class="craft__card-icon">🪸</span>
+      <h3 class="craft__card-title">UI &amp; Ecosystems</h3>
+      <p class="craft__card-text">Design systems that feel alive — living, breathing interfaces where every component has purpose and place.</p>
+    </article>
+    <article class="craft__card reveal">
+      <span class="craft__card-icon">🦑</span>
+      <h3 class="craft__card-title">Full-Stack Below</h3>
+      <p class="craft__card-text">From database to deploy — the deep architecture that keeps everything running beneath the surface, unseen but unshakable.</p>
+    </article>
+  </div>
+
+  <div class="craft__strip reveal">
+    <p class="craft__strip-label">currently</p>
+    <p class="craft__strip-text">charting new waters <span class="craft__strip-wave">〰〰〰</span></p>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section class="stats section" aria-labelledby="stats-title">
+  <div class="stats__inner reveal">
+    <p class="eyebrow">05&nbsp;&nbsp;/&nbsp;&nbsp;by the numbers</p>
+    <h2 class="section__title" id="stats-title">Depth in<br><em>every metric</em></h2>
+    <div class="stats__grid">
+      <div class="stats__item">
+        <span class="stats__number" data-count="14">0</span>
+        <span class="stats__label">Sites Built</span>
+      </div>
+      <div class="stats__item">
+        <span class="stats__number" data-count="50">0</span>
+        <span class="stats__label">Projects Shipped</span>
+      </div>
+      <div class="stats__item">
+        <span class="stats__number" data-count="99">0</span>
+        <span class="stats__label">Hours of Focus</span>
+      </div>
+      <div class="stats__item">
+        <span class="stats__number" data-count="1">0</span>
+        <span class="stats__label">Developer, End-to-End</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact section" id="contact">
+  <div class="contact__inner">
+    <p class="eyebrow reveal">06&nbsp;&nbsp;/&nbsp;&nbsp;get in touch</p>
+    <h2 class="contact__title reveal">Ready to sail into<br><em>something great?</em></h2>
+    <p class="contact__sub reveal">
+      Let's build something monumental. Tell me about your vision — I'll bring
+      the depth, the craft, and the relentless drive to make it real.
+    </p>
+
+    <div class="contact__actions reveal">
+      <a href="mailto:veillemm1089@gmail.com" class="btn btn--primary btn--magnetic">veillemm1089@gmail.com</a>
+      <a href="tel:09935584785" class="btn btn--ghost btn--magnetic">0993 558 4785</a>
+      <a href="https://veillemm.netlify.app/" target="_blank" rel="noopener" class="btn btn--ghost btn--magnetic">View Portfolio ↗</a>
+    </div>
+
+    <form class="contact__form reveal" id="contactForm">
+      <div class="contact__form-row">
+        <label class="contact__field">
+          <span class="contact__field-label">your name</span>
+          <input type="text" name="name" placeholder="Juan dela Cruz" required autocomplete="name">
+        </label>
+        <label class="contact__field">
+          <span class="contact__field-label">your email</span>
+          <input type="email" name="email" placeholder="you@example.com" required autocomplete="email">
+        </label>
+      </div>
+      <label class="contact__field">
+        <span class="contact__field-label">the voyage</span>
+        <textarea name="message" rows="4" placeholder="Tell me about the thing you want to build..." required></textarea>
+      </label>
+      <button type="submit" class="btn btn--primary btn--magnetic contact__submit">Set Sail <span class="btn__arrow">↘</span></button>
+      <p class="contact__form-note">Opens your mail app, addressed to veillemm1089@gmail.com</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <a class="footer__logo" href="#top">veillemm<span class="footer__logo-dot">.</span></a>
+    <p class="footer__tag">cyrus vergara — developer who builds for the deep.</p>
+
+    <div class="footer__cols">
+      <div class="footer__col">
+        <h4 class="footer__h">contact</h4>
+        <a href="mailto:veillemm1089@gmail.com">veillemm1089@gmail.com</a>
+        <a href="tel:09935584785">0993 558 4785</a>
+        <a href="https://veillemm.netlify.app/" target="_blank" rel="noopener">veillemm.netlify.app ↗</a>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__h">social</h4>
+        <a href="https://veillemm.netlify.app/" target="_blank" rel="noopener">@veillemm</a>
+        <a href="mailto:veillemm1089@gmail.com">email me</a>
+      </div>
+      <div class="footer__col footer__col--credits">
+        <h4 class="footer__h">image credits</h4>
+        <p class="footer__credit">Ocean photographs via <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a> (free license) — contributing photographers include Jez Timms, Chris Leggat, Henrique Setim, Ray Hennessy, and others. All images used with Unsplash free-use license.</p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© <span id="year">2026</span> VEILLEMM — all rights reserved</span>
+      <span class="footer__ocean">〰 built from the depths 〰</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" aria-hidden="true">
+  <button class="lightbox__close" id="lightboxClose" aria-label="Close image viewer">✕</button>
+  <button class="lightbox__prev" id="lightboxPrev" aria-label="Previous image">←</button>
+  <button class="lightbox__next" id="lightboxNext" aria-label="Next image">→</button>
+  <figure class="lightbox__figure">
+    <img class="lightbox__img" id="lightboxImg" src="" alt="">
+    <figcaption class="lightbox__cap" id="lightboxCap"></figcaption>
+  </figure>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
