@@ -137,8 +137,18 @@ $$('a[href^="#"]').forEach(a => {
     burger.setAttribute("aria-label", open ? "Close menu" : "Open menu");
     document.body.classList.toggle("menu-open", open);
   };
-  burger.addEventListener("click", () => toggle(!menu.classList.contains("is-open")));
+  // Use both click and touchstart for better Android support
+  const handleToggle = (e) => {
+    e.preventDefault();
+    toggle(!menu.classList.contains("is-open"));
+  };
+  burger.addEventListener("click", handleToggle);
+  burger.addEventListener("touchend", (e) => {
+    e.preventDefault();
+    toggle(!menu.classList.contains("is-open"));
+  });
   $$(".nav__mobile-link", menu).forEach(a => a.addEventListener("click", () => toggle(false)));
+  $$(".nav__mobile-link", menu).forEach(a => a.addEventListener("touchend", () => toggle(false)));
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && menu.classList.contains("is-open")) toggle(false);
   });

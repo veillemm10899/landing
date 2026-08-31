@@ -202,35 +202,43 @@ em { font-style: normal; }
 
 .nav__actions { display: flex; align-items: center; gap: 14px; }
 .nav__burger {
-  display: none; flex-direction: column; gap: 5px;
-  width: 42px; height: 42px; align-items: center; justify-content: center;
-  border-radius: 10px;
+  display: none; flex-direction: column; gap: 6px;
+  width: 48px; height: 48px; align-items: center; justify-content: center;
+  border-radius: 12px; position: relative; z-index: 210;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 .nav__burger span {
-  display: block; width: 20px; height: 2px;
+  display: block; width: 22px; height: 2.5px;
   background: var(--ink); border-radius: 2px;
   transition: transform 0.4s var(--ease), opacity 0.3s;
+  pointer-events: none;
 }
-.nav__burger.is-open span:first-child { transform: translateY(3.5px) rotate(45deg); }
-.nav__burger.is-open span:last-child { transform: translateY(-3.5px) rotate(-45deg); }
+.nav__burger.is-open span:first-child { transform: translateY(4px) rotate(45deg); }
+.nav__burger.is-open span:last-child { transform: translateY(-4px) rotate(-45deg); }
 
 /* ---------- 06 · MOBILE MENU ---------- */
 .nav__mobile {
-  position: fixed; inset: 0; z-index: 190;
+  position: fixed; inset: 0; z-index: 195;
   background: var(--bg);
-  padding: 110px 24px 40px;
+  padding: 100px 28px 40px;
   opacity: 0; visibility: hidden;
   transition: opacity 0.4s var(--ease), visibility 0.4s;
-  display: flex; flex-direction: column; gap: 22px;
+  display: flex; flex-direction: column; gap: 10px;
+  overflow-y: auto; -webkit-overflow-scrolling: touch;
 }
 .nav__mobile.is-open { opacity: 1; visibility: visible; }
 .nav__mobile-link {
-  font-family: var(--display); font-size: 34px; font-weight: 700;
-  letter-spacing: 0.04em;
-  transition: color 0.3s;
+  font-family: var(--display); font-size: clamp(28px, 7vw, 34px); font-weight: 700;
+  letter-spacing: 0.04em; padding: 14px 0;
+  transition: color 0.3s; display: block;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  border-bottom: 1px solid var(--line);
 }
-.nav__mobile-link:hover { color: var(--teal); }
-.nav__mobile-cta { margin-top: 16px; align-self: flex-start; }
+.nav__mobile-link:last-of-type { border-bottom: none; }
+.nav__mobile-link:hover, .nav__mobile-link:active { color: var(--teal); }
+.nav__mobile-cta { margin-top: 20px; align-self: flex-start; }
 
 /* ---------- 07 · PRELOADER ---------- */
 .preloader {
@@ -876,3 +884,21 @@ em { font-style: normal; }
   .reveal { opacity: 1; transform: none; }
   .hero__bg-img { animation: none; }
 }
+
+/* ---------- 21 · ANDROID / TOUCH FIXES ---------- */
+@media (hover: none) and (pointer: coarse) {
+  .nav__burger { min-width: 48px; min-height: 48px; }
+  .nav__mobile-link:active { color: var(--teal); opacity: 0.8; }
+  .btn { min-height: 48px; }
+  .gallery__item { -webkit-tap-highlight-color: transparent; }
+  .gallery__item:active img { transform: scale(1.03); }
+  .pillar:active { transform: translateX(2px); }
+}
+
+/* Fix Android Chrome overscroll bounce */
+@supports (-webkit-touch-callout: none) {
+  body { -webkit-overflow-scrolling: touch; }
+}
+
+/* Ensure burger is always above mobile menu backdrop */
+body.menu-open .nav__burger { z-index: 210; }
